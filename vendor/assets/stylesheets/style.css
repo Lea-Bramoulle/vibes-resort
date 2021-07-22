@@ -15,7 +15,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Raleway", sans-serif;
-  color: #235E70;
+  color: #002C44;
   font-weight:lighter;
 }
 
@@ -36,7 +36,7 @@ p {
 }
 
 .p-font3 {
-  color:#235E70;
+  color:#002C44;
   font-size:16px;
   font-weight: lighter;
 }
@@ -100,14 +100,19 @@ p {
 
 .btn-up {
   position:fixed;
-  color: #235E70;
+  color: #002C44;
   bottom:1em;
   right:1em;
 }
 
+
+.color-primary {
+  color: #002C44;
+}
+
 .image-village {
   border : 0.2rem solid;
-  border-color: #235E70;
+  border-color: #002C44;
 }
 
 .nav-item {
@@ -590,7 +595,7 @@ p {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 0;
-  background: #235E70;
+  background: #002C44;
 }
 
 .btn-get-started {
@@ -609,7 +614,7 @@ p {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 0;
-  background: #235E70;
+  background: #002C44;
 }
 
 .btn-invers {
@@ -624,29 +629,29 @@ p {
   transition: 0.5s;
   line-height: 1;
   margin: 10px;
-  color: #235E70;
+  color: #002C44;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 0;
   background: #fff;
   border: solid 1px;
-  border-color: #235E70;
+  border-color: #002C44;
 }
 
 .btn-invers:hover {
   color: #fff;
-  background: #235E70;
+  background: #002C44;
 }
 
 
 #hero .btn-get-started:hover {
   background: #fff;
-  color : #235E70
+  color : #002C44
 }
 
 .btn-get-started:hover {
   background: #fff;
-  color : #235E70
+  color : #002C44
 }
 
 @media (max-width: 768px) {
@@ -1501,7 +1506,7 @@ section {
 }
 
 #footer {
-  background: #587187;
+  background: #002C44;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
