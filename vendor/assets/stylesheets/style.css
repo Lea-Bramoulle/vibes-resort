@@ -47,6 +47,18 @@ p {
   font-weight: lighter;
 }
 
+.bandeau {
+  background-color:white;
+  width:100%;
+}
+
+.p-bandeau {
+  margin-top:3em;
+  text-align:center;
+  font-size:18px;
+  font-weight:lighter;
+}
+
 .jumbotron {
   background-color: #F5F9FC;
   height:auto;
@@ -1631,6 +1643,13 @@ section {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
+  color: #fff;
+}
+
+#footer .credits-2 {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 11px;
   color: #fff;
 }
 
