@@ -14,30 +14,32 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6, .font-primary {
-  font-family: "Raleway", sans-serif;
-  color: #002C44;
+  font-family:"Playfair Display",serif;  color: #002C44;
   font-weight:lighter;
 }
 
 p {
   text-align: justify;
+  font-weight: lighter;
+  font-family: 'Barlow', sans-serif;
+  font-size:20px;
 }
 
 .p-font {
   color:grey;
-  font-size:18px;
+  font-size:20px;
   font-weight: lighter;
 }
 
 .p-font2 {
   color:grey;
-  font-size:16px;
+  font-size:18px;
   font-weight: lighter;
 }
 
 .p-font3 {
   color:#002C44;
-  font-size:16px;
+  font-size:18px;
   font-weight: lighter;
 }
 
@@ -57,6 +59,9 @@ p {
   text-align:center;
   font-size:18px;
   font-weight:lighter;
+  text-transform: uppercase;
+  background-color:#002C44
+  color:white;
 }
 
 .jumbotron {
@@ -457,7 +462,7 @@ p {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: calc(100vh - 114px);
+  height: calc(130vh - 114px);
   padding: 0;
   overflow: hidden;
   padding-top:4em;
@@ -467,7 +472,7 @@ p {
 #hero .carousel-item {
   margin-top:2em;
   width: 100%;
-  height: calc(100vh - 114px);
+  height: calc(130vh - 114px);
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
@@ -476,7 +481,7 @@ p {
 
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(13, 30, 45, 0.3);
+  background-color: rgba(13, 30, 45, 0.1);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -495,7 +500,7 @@ p {
   align-items: center;
   position: absolute;
   bottom: 0;
-  top: 0;
+  top: -5em;
   left: 0;
   right: 0;
   overflow: hidden;
@@ -580,7 +585,7 @@ p {
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family:"Barlow",sans-serif;
   border-radius: 4px;
   font-weight: 500;
   font-size: 14px;
@@ -599,7 +604,7 @@ p {
 }
 
 .btn-get-started {
-  font-family: "Raleway", sans-serif;
+ font-family:"Barlow",sans-serif;
   border-radius: 4px;
   font-weight: 500;
   font-size: 14px;
@@ -1660,4 +1665,116 @@ section {
 
 #footer .credits a {
   color: #9eccf4;
+}
+
+
+
+
+.pricing-card-area .single-card{
+  border-radius: 2px;
+  background:#fff;
+  padding:70px 25px;
+  padding-bottom:0;
+  box-shadow:0px 0px 9px 0px rgba(131,93,248,0.07);
+  -webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s;border:1px solid transparent
+}
+
+.pricing-card-area .single-card .card-top{
+    border-bottom:2px solid #f4f4f4;
+    margin-bottom:46px
+  }
+
+.pricing-card-area .single-card .card-top span{
+  font-size:50px;
+  display:block;
+  margin-bottom:10px
+}
+
+.pricing-card-area .single-card .card-top h4{
+  color:#2e3c40;
+  font-size:25px;
+  font-weight:700;
+  margin-bottom:26px
+  }
+
+.pricing-card-area .single-card .card-bottom ul li {
+  list-style-type: none;
+  color:#636363;
+  font-weight:300;
+  margin-bottom:26px;
+  font-size:16px}
+
+.pricing-card-area .single-card .card-bottom ul li:last-child {
+  margin-bottom:0px}
+
+.pricing-card-area .single-card .card-bottom ul li i {
+  padding-right:7px}
+
+.pricing-card-area .single-card .card-buttons {
+  -webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s;visibility:hidden;opacity:0}
+
+.pricing-card-area .single-card.active {
+  padding-bottom:70px;
+  border:1px solid #002C44}
+
+.pricing-card-area .single-card.active .card-buttons {
+  visibility:visible;
+  opacity:1}
+
+.pricing-card-area .single-card:hover {
+  box-shadow:0px 10px 30px 0px rgba(133,66,189,0.1);
+  border:1px solid #002C44;
+  padding-bottom:70px
+}
+
+.pricing-card-area .single-card:hover .card-buttons {
+  visibility:visible;
+  opacity:1
+}
+
+.card-buttons{-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s;visibility:hidden;opacity:0}
+
+.pricing-card-area .single-card.active{padding-bottom:70px;border:1px solid #002C44}
+
+.pricing-card-area .single-card.active .card-buttons{visibility:visible;opacity:1}
+
+.pricing-card-area .single-card:hover{box-shadow:0px 10px 30px 0px rgba(133,66,189,0.1);border:1px solid #002C44;padding-bottom:70px}
+
+.pricing-card-area .single-card:hover .card-buttons{visibility:visible;opacity:1}
+
+.count-down-area{position:relative;top:-73px}
+
+
+.count-down-area{
+  position:relative;top:-123px
+}
+
+.count-down-area .count-down-wrapper{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center
+}
+
+.count-down-area .count-down-wrapper .single-counter{
+  padding:44px 10px 44px 9px;
+  margin-bottom:30px
+}
+
+.count-down-area .count-down-wrapper .single-counter span{
+  color:#fff;font-size:36px;
+  line-height:1;
+  margin-bottom:12px;
+  display:block;
+  font-weight:lighter;
+  text-transform:uppercase;
+  font-family:"Barlow",sans-serif;
+}
+
+.count-down-area .count-down-wrapper .single-counter p{
+  font-size:18px;
+  color:#fff;
+  line-height:1;
+  text-align:center;
+  font-weight:lighter;
+  font-family:"Barlow",sans-serif
 }

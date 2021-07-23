@@ -9,7 +9,7 @@
         <div class="carousel-inner" role="listbox">
 
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url(<%= asset_path 'vibes-resort-1.webp' %>) ; background-position: center; background-attachment:fixed;">
+          <div class="carousel-item active" style="background-image: url(<%= asset_path 'vibes-resort-terrasse-2.webp' %>) ; background-position: center; ">
             <div class="carousel-container">
               <div class="carousel-content container">
                 <h2 class="animate__animated animate__fadeInDown" style="text-transform: uppercase;">Vibes Resort</h2>
@@ -20,11 +20,11 @@
                   </div>
                 <% end %>
 
-                <p style="font-size:18px;">Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
+                <p style="font-size:20px; text-transform: uppercase;">Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
 à la fois intime et convivial, avec des équipements de
 haut standing et un niveau de confort sans pareil.</p>
 
-                <p style="font-size:18px;"> Cette résidence de tourisme de luxe est idéale pour valoriser votre patrimoine, avec une rentabilité prévisionnelle entre 5 et 6 % et la récupération possible de la TVA*.</p>
+                <p style="text-transform: uppercase;"> Cette résidence de tourisme de luxe est idéale pour valoriser votre patrimoine, avec une rentabilité prévisionnelle entre 5 et 6 % et la récupération possible de la TVA*.</p>
 
                 <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started" %>
                 <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers " %>
@@ -33,7 +33,7 @@ haut standing et un niveau de confort sans pareil.</p>
           </div>
 
           <!-- Slide 2 -->
-          <div class="carousel-item" style="background-image: url(<%= asset_path 'vibes-resort-2.webp' %>) ; background-position: bottom; background-attachment:fixed;">
+          <div class="carousel-item" style="background-image: url(<%= asset_path 'vibes-resort-1.webp' %>) ; background-position: top;">
             <div class="carousel-container">
               <div class="carousel-content container">
                 <h2 class="animate__animated animate__fadeInDown" style="text-transform: uppercase;">Vibes Resort</h2>
@@ -44,11 +44,11 @@ haut standing et un niveau de confort sans pareil.</p>
                   </div>
                 <% end %>
 
-                <p style="font-size:18px;" >Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
+                <p style="font-size:18px; text-transform: uppercase;" >Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
 à la fois intime et convivial, avec des équipements de
 haut standing et un niveau de confort sans pareil.</p>
 
-                <p style="font-size:18px;"> Cette résidence de tourisme de luxe est idéale pour valoriser votre patrimoine, avec une rentabilité prévisionnelle entre 5 et 6 % et la récupération possible de la TVA*.</p>
+                <p style="font-size:18px; text-transform: uppercase;"> Cette résidence de tourisme de luxe est idéale pour valoriser votre patrimoine, avec une rentabilité prévisionnelle entre 5 et 6 % et la récupération possible de la TVA*.</p>
 
                 <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
                 <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers " %>
@@ -57,7 +57,7 @@ haut standing et un niveau de confort sans pareil.</p>
           </div>
 
           <!-- Slide 3 -->
-          <div class="carousel-item" style="background-image: url(<%= asset_path 'vibes-resort-terrasse-2.webp' %>); background-position:center; background-attachment:fixed;">
+          <div class="carousel-item" style="background-image: url(<%= asset_path 'vibes-resort-2.webp' %>); background-position:center;">
             <div class="carousel-container">
               <div class="carousel-content container">
                 <h2 class="animate__animated animate__fadeInDown" style="text-transform: uppercase;">Vibes Resort</h2>
@@ -68,11 +68,11 @@ haut standing et un niveau de confort sans pareil.</p>
                   </div>
                 <% end %>
 
-                <p style="font-size:18px;" >Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
+                <p style="font-size:18px; text-transform: uppercase;" >Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
 à la fois intime et convivial, avec des équipements de
 haut standing et un niveau de confort sans pareil.</p>
 
-                <p style="font-size:18px;"> Cette résidence de tourisme de luxe est idéale pour valoriser votre patrimoine, avec une rentabilité prévisionnelle entre 5 et 6 % et la récupération possible de la TVA*.</p>
+                <p style="font-size:18px; text-transform: uppercase;"> Cette résidence de tourisme de luxe est idéale pour valoriser votre patrimoine, avec une rentabilité prévisionnelle entre 5 et 6 % et la récupération possible de la TVA*.</p>
 
                 <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started" %>
                 <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers" %>
@@ -200,6 +200,8 @@ aménagées, sans oublier un port de plaisance de
 
         </div>
       </div>
+
+
 
 
 
@@ -366,7 +368,7 @@ de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
       </div>
 
 
-
+<!--
     <div class="jumbotron-invest active ">
 
       <div class="container invest text-center" style="padding-top:6em;" id="proprietaire">
@@ -421,19 +423,165 @@ de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
           détention, sauf si le nouvel acquéreur reprend le mandat
           de gestion jusqu’au terme des 20 ans.</p>
 
-          <div style="padding-bottom:2em;">
-          <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
-          <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
-          </div>
-
-          <p class="p-font4 mb-4 pb-4">
-            *Rentabilité donnée à titre indicatif et sous conditions. La location sous le régime de la parahôtellerie nécessite la mise en œuvre d’au moins trois des prestations suivantes : fourniture du petit-déjeuner, nettoyage régulier des locaux, fourniture du linge de maison, réception de la clientèle. Elle permet la récupération intégrale de la TVA (20%) payée lors de l’acquisition du bien, sous condition d’engagement de location. Comme tout investissement, investir dans l’immobilier peut présenter des risques.
-          </P>
-
 
       </DIV>
 
     </div>
+
+-->
+
+
+    <!--? Services Start -->
+<section class="pricing-card-area section-padding30 " style="background-image: url(<%=asset_path "section_bg1.png"%>);">
+    <div class="container">
+            <!-- Section Tittle -->
+            <div class="row d-flex justify-content-center">
+            <div class="col-lg-10">
+                <div class="section-tittle text-center mb-70">
+                    <h2 class="my-4 py-4">Devenir Propriétaire</h2>
+                    <h4 class="my-4 py-4">Cette résidence de tourisme de luxe est idéale pour valoriser votre patrimoine,
+                    avec une rentabilité prévisionnelle entre 5 et 6 % et la récupération possible de la TVA*.</h4>
+                </div>
+            </div>
+          </div>
+
+        <div class="row align-items-end">
+
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-card text-center mb-30">
+                    <div class="card-top">
+                        <span class="flaticon-chart"></span>
+                        <h4>Chambre T1</h4>
+                    </div>
+                    <div class="card-bottom">
+                        <ul>
+                            <li><i class="fas fa-check"></i>Chambres de 28 à 51 m2</li>
+                            <li><i class="fas fa-check"></i>A partir de 285 600 € TTC**</li>
+                        </ul>
+                    </div>
+                    <div class="card-buttons mt-30">
+                        <a href="<%=root_path(anchor:"contact")%>" class="btn card-btn1">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-card active text-center mb-30">
+                    <div class="card-top">
+                        <span class="flaticon-project"></span>
+                        <h4>Logements T3</h4>
+                    </div>
+                    <div class="card-bottom">
+                        <ul>
+                            <li><i class="fas fa-check"></i>Logements de 66 m2</li>
+                            <li><i class="fas fa-check"></i>A partir de 644 000 € TTC**</li>
+                        </ul>
+                    </div>
+                    <div class="card-buttons mt-30">
+                        <a href="<%=root_path(anchor:"contact")%>" class="btn card-btn1">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="single-card text-center mb-30">
+                    <div class="card-top">
+                        <span class="flaticon-award"></span>
+                        <h4>Suite Duplex</h4>
+                    </div>
+                    <div class="card-bottom">
+                        <ul>
+                            <li><i class="fas fa-check"></i>Suites duplex de 48 à 139 m2</li>
+                            <li><i class="fas fa-check"></i>A partir de 708 000 € TTC**</li>
+                        </ul>
+                    </div>
+                    <div class="card-buttons mt-30">
+                        <a href="<%=root_path(anchor:"contact")%>" class="btn card-btn1">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Tittle -->
+            <div class="row d-flex justify-content-center mb-4 pb-4">
+            <div class="col-lg-10">
+                <div class=" text-center my-4 py-4">
+                    <h4 class="my-4 py-4">Nous vous offrons la possibilité d’acquérir une chambre ou une suite, meublée au sein d’une résidence à vocation touristique permettant à votre gestionnaire d’organiser la fourniture d’au moins 3 des 4 prestations para-hôtelières suivantes :</h4>
+                </div>
+            </div>
+          </div>
+
+
+        </div>
+    </div>
+</section>
+<!-- Services Card End -->
+
+
+<!--? Count Down Start -->
+<div class="count-down-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-12">
+                <div class="count-down-wrapper" style="background-color:#10384E;">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <!-- Counter Up -->
+                            <div class="single-counter text-center">
+                                <span class="counter pt-4"><%= image_tag('croissant.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
+                                <p>Petit déjeuner</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <!-- Counter Up -->
+                            <div class="single-counter active text-center">
+                                <span class="counter pt-4">                <%= image_tag('menage.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
+                                <p>Nettoyage quotidien des locaux</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <!-- Counter Up -->
+                            <div class="single-counter text-center">
+                                <span class="counter pt-4">             <%= image_tag('laundry.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
+                                <p>Fourniture du linge</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <!-- Counter Up -->
+                            <div class="single-counter text-center">
+                                <span class="counter pt-4">                <%= image_tag('client.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
+                                <p>Réception de la clientèle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Count Down End -->
+
+
+<!-- Section Tittle -->
+<div class="row d-flex justify-content-center">
+  <div class="col-lg-8">
+      <div class=" ">
+          <h4 class="mb-4 pb-4 text-center">Si ces conditions sont réunies, l’ensemble de la prestation (assimilée à une activité hôtelière) est soumis à la TVA. L’acquéreur peut alors récupérer la TVA qu’il a acquittée sur le prix de l’acquisition des murs et du mobilier (taux de TVA en vigueur).</h4>
+          <p style="margin-bottom:2em;">
+            Cette récupération est totalement acquise au bout de 20 ans de détention (au bout de 5 ans pour le mobilier). En cas de revente anticipée, la TVA est remboursable au prorata de la différence d’années de détention, sauf si le nouvel acquéreur reprend le mandat de gestion jusqu’au terme des 20 ans.</p>
+      </div>
+
+      <div style="padding-bottom:2em; text-align:center;">
+          <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
+          <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
+      </div>
+
+      <p class="p-font4 mb-4 pb-4">
+        *Rentabilité donnée à titre indicatif et sous conditions. La location sous le régime de la parahôtellerie nécessite la mise en œuvre d’au moins trois des prestations suivantes : fourniture du petit-déjeuner, nettoyage régulier des locaux, fourniture du linge de maison, réception de la clientèle. Elle permet la récupération intégrale de la TVA (20%) payée lors de l’acquisition du bien, sous condition d’engagement de location. Comme tout investissement, investir dans l’immobilier peut présenter des risques.
+      </P>
+
+
+  </div>
+</div>
 
 
 
@@ -519,6 +667,9 @@ de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
 
         </div>
     </section><!-- End Contact Us Section -->
+
+
+
 
 
 
