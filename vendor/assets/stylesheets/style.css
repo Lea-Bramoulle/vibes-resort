@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 p {
   text-align: justify;
-  font-weight: lighter;
+  font-weight: 200;
   font-family: 'Barlow', sans-serif;
   font-size:20px;
 }
@@ -28,25 +28,25 @@ p {
 .p-font {
   color:grey;
   font-size:20px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .p-font2 {
   color:grey;
   font-size:20px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .p-font3 {
   color:#002C44;
   font-size:20px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .p-font4 {
   color:grey;
   font-size:12px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .bandeau {
