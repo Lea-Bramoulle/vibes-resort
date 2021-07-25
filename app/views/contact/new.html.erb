@@ -24,10 +24,13 @@
                 à la fois intime et convivial, avec des équipements de
                 haut standing et un niveau de confort sans pareil.</p>
 
-                <p style="text-transform: uppercase;"> Cette résidence de tourisme de luxe est idéale pour valoriser votre patrimoine, avec une rentabilité prévisionnelle entre 5 et 6 % et la récupération possible de la TVA*.</p>
 
+              <div class="mt-4 pt-4">
                 <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started" %>
                 <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers " %>
+              </div>
+
+
               </div>
             </div>
           </div>
@@ -42,8 +45,49 @@
 
 
 
+  <!-- ======= About Us Section ======= -->
+  <section id="about" class="about" >
+    <div class="container">
 
-        <!-- ======= About Us Section ======= -->
+
+      <h1 class="mb-4 pt-4 pb-4 text-center">Vibes Resort au Cap d'Agde, un village, une résidence</h1>
+
+
+      <div class="row my-4 py-4" style="align-items:center; justify-content:center; ">
+
+        <div class="col-xs-12 col-sm-12 col-lg-10 col-md-10 d-none d-lg-block mb-4 pb-4 ">
+
+          <p class="p-font text-center">Situé à l’intérieur du <strong>village naturiste du Cap d'Agde</strong>, Vibes Resort
+            profite d’un emplacement à la fois incontournable et incomparable, comme un véritable signal d’entrée.</p>
+
+          <p class="p-font text-center mb-4">Cette <strong>résidence de luxe à vocation touristique</strong> abrite
+          appartements privés, piscine et jacuzzis, bar lounge
+          et restaurant, sur une terrasse panoramique à la vue imprenable. Un véritable appel au lâcher prise et à la volupté sur fond azur !</p>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-lg-5 col-md-6" style="background-color:#10384E;height:34em; align-items:center;display:flex;">
+
+          <p class="my-4 mx-4" style="font-size:32px; color:white; font-weight:lighter; text-align:center;"> Cette <span style="font-weight:600;">résidence de tourisme de luxe</span> est idéale pour valoriser votre patrimoine, avec une <span style="font-weight:600;">rentabilité prévisionnelle entre 5 et 6 %</span> et la récupération possible de la TVA*.<br><br>
+          <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto text-center mx-auto", id:"village"%></p>
+
+
+         </div>
+
+         <div class="col-xs-12 col-sm-12 col-lg-5 col-md-6" style="background-image: url(<%= asset_path 'chambre-HD2.webp' %>); background-size:cover; height:34em; object-fit:cover; background-position:left;">
+
+
+          </div>
+
+
+          </div>
+
+        </div>
+      </section><!-- End About Us Section -->
+
+
+
+        <!-- ======= About Us Section =======
         <section id="about" class="about" >
           <div class="container">
 
@@ -81,7 +125,7 @@
 
 
 
-<div class="jumbotron "  style="background-image: url(<%=asset_path "section_bg1.png"%>);">
+<div class="jumbotron mt-4"  style="background-image: url(<%=asset_path "section_bg1.png"%>);">
   <div class="row d-flex" style="justify-content:center;" >
 
 <!-- CAROUSEL Village
@@ -256,82 +300,82 @@
   </div>
 
 
-                            <div class="row " style="padding:2em;" id="appartements">
+<div class="row " style="padding:2em;" id="appartements">
 
-                              <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6 pt-4 mt-4 pb-4 mb-4">
+  <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6 pt-4 mt-4 pb-4 mb-4">
 
-                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                  <ol class="carousel-indicators">
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-                                    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-                                  </ol>
-                                  <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                      <%=image_tag("chambre-HD2.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-                                    </div>
-                                    <div class="carousel-item">
-                                      <%=image_tag("vibes-resort-chambre.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-                                    </div>
-                                    <div class="carousel-item">
-                                      <%=image_tag("vibes-resort-appartement-3.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-                                    </div>
-                                    <div class="carousel-item">
-                                      <%=image_tag("vibes-resort-appartement-2.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-                                    </div>
-                                    <div class="carousel-item">
-                                      <%=image_tag("vibes-resort-chambre2.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-                                    </div>
-                                    <div class="carousel-item">
-                                      <%=image_tag("vibes-resort-appartement-1.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-                                    </div>
-                                    <div class="carousel-item">
-                                      <%=image_tag("vibes-resort-terrasse-1.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-                                    </div>
-                                    <div class="carousel-item">
-                                      <%=image_tag("salle-bain.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-                                    </div>
-                                  </div>
-                                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                  </a>
-                                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                  </a>
-                                </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%=image_tag("chambre-HD2.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
+        </div>
+        <div class="carousel-item">
+          <%=image_tag("vibes-resort-chambre.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
+        </div>
+        <div class="carousel-item">
+          <%=image_tag("vibes-resort-appartement-3.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
+        </div>
+        <div class="carousel-item">
+          <%=image_tag("vibes-resort-appartement-2.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
+        </div>
+        <div class="carousel-item">
+          <%=image_tag("vibes-resort-chambre2.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
+        </div>
+        <div class="carousel-item">
+          <%=image_tag("vibes-resort-appartement-1.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
+        </div>
+        <div class="carousel-item">
+          <%=image_tag("vibes-resort-terrasse-1.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
+        </div>
+        <div class="carousel-item">
+          <%=image_tag("salle-bain.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
-                              </div>
+  </div>
 
 
-                              <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
+<div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
 
-                                <div class="container text-center  mx-auto archi2 "  data-aos="fade-up" data-aos-delay="100">
-                                  <h2 class="mb-4 pb-4"> Les Appartements </h2>
+  <div class="container text-center  mx-auto archi2 "  data-aos="fade-up" data-aos-delay="100">
+    <h2 class="mb-4 pb-4"> Les Appartements </h2>
 
-                                  <p class="p-font2"> Rejoignez vos <strong>appartements privés et profitez
-                                    d’un confort de grand standing</strong>, que l’on a aussi
-                                    plaisir à faire partager. Des <strong>chambres T1 aux
-                                      suites 4 pièces</strong>, les <strong>appartements de Vibes Resort</strong>
-                                      ont ce petit quelque chose en plus qui les rend
-                                      tellement irrésistibles. </p>
+    <p class="p-font2"> Rejoignez vos <strong>appartements privés et profitez
+      d’un confort de grand standing</strong>, que l’on a aussi
+      plaisir à faire partager. Des <strong>chambres T1 aux
+        suites 4 pièces</strong>, les <strong>appartements de Vibes Resort</strong>
+        ont ce petit quelque chose en plus qui les rend
+        tellement irrésistibles. </p>
 
-                                      <p class="p-font2">Décoration et mobilier
-                                        design, ambiance feutrée, spacieux volumes,
-                                        stationnements privatifs sécurisés ; ici, tout est
-                                        dédié à votre <strong>bien-être</strong>. </p>
+        <p class="p-font2">Décoration et mobilier
+          design, ambiance feutrée, spacieux volumes,
+          stationnements privatifs sécurisés ; ici, tout est
+          dédié à votre <strong>bien-être</strong>. </p>
 
-                                      </div>
+        </div>
 
-                                    </div>
-                                  </div>
+      </div>
+    </div>
 
 
                                   <!--
@@ -397,248 +441,248 @@
                             -->
 
 
-                            <!--? Services Start -->
-                            <section class="pricing-card-area section-padding30 " style="background-image: url(<%=asset_path "section_bg1.png"%>);">
-                              <div class="container">
-                                <!-- Section Tittle -->
-                                <div class="row d-flex justify-content-center">
-                                  <div class="col-lg-10">
-                                    <div class="section-tittle text-center mb-70">
-                                      <h2 class="my-4 py-4">Devenir Propriétaire</h2>
-                                      <h4 class="my-4 py-4">Cette résidence de tourisme de luxe est idéale pour valoriser votre patrimoine,
-                                        avec une rentabilité prévisionnelle entre 5 et 6 % et la récupération possible de la TVA*.</h4>
-                                      </div>
-                                    </div>
-                                  </div>
+<!--? Services Start -->
+<section class="pricing-card-area section-padding30 " style="background-image: url(<%=asset_path "section_bg1.png"%>);">
+<div class="container">
+  <!-- Section Tittle -->
+  <div class="row d-flex justify-content-center">
+    <div class="col-lg-10">
+      <div class="section-tittle text-center mb-70">
+        <h2 class="my-4 py-4">Devenir Propriétaire</h2>
+        <h4 class="my-4 py-4">Cette résidence de tourisme de luxe est idéale pour valoriser votre patrimoine,
+          avec une rentabilité prévisionnelle entre 5 et 6 % et la récupération possible de la TVA*.</h4>
+        </div>
+      </div>
+    </div>
 
-                                  <div class="row align-items-end">
+    <div class="row align-items-end">
 
-                                    <div class="col-xl-4 col-lg-4 col-md-6">
-                                      <div class="single-card active text-center mb-30">
-                                        <div class="card-top">
-                                          <span class="flaticon-chart"></span>
-                                          <h4>Chambre T1</h4>
-                                        </div>
-                                        <div class="card-bottom">
-                                          <ul>
-                                            <li><i class="fas fa-check"></i>Chambres de 28 à 51 m2</li>
-                                            <li><i class="fas fa-check"></i>A partir de 285 600 € TTC**</li>
-                                          </ul>
-                                        </div>
-                                        <div class="card-buttons mt-30">
-                                          <a href="<%=root_path(anchor:"contact")%>" class="btn card-btn1">Contactez-nous</a>
-                                        </div>
-                                      </div>
-                                    </div>
+      <div class="col-xl-4 col-lg-4 col-md-6">
+        <div class="single-card active text-center mb-30">
+          <div class="card-top">
+            <span class="flaticon-chart"></span>
+            <h4>Chambre T1</h4>
+          </div>
+          <div class="card-bottom">
+            <ul>
+              <li><i class="fas fa-check"></i>Chambres de 28 à 51 m2</li>
+              <li><i class="fas fa-check"></i>A partir de 285 600 € TTC**</li>
+            </ul>
+          </div>
+          <div class="card-buttons mt-30">
+            <a href="<%=root_path(anchor:"contact")%>" class="btn card-btn1">Contactez-nous</a>
+          </div>
+        </div>
+      </div>
 
-                                    <div class="col-xl-4 col-lg-4 col-md-6">
-                                      <div class="single-card  text-center mb-30">
-                                        <div class="card-top">
-                                          <span class="flaticon-project"></span>
-                                          <h4>Logements T3</h4>
-                                        </div>
-                                        <div class="card-bottom">
-                                          <ul>
-                                            <li><i class="fas fa-check"></i>Logements de 66 m2</li>
-                                            <li><i class="fas fa-check"></i>A partir de 644 000 € TTC**</li>
-                                          </ul>
-                                        </div>
-                                        <div class="card-buttons mt-30">
-                                          <a href="<%=root_path(anchor:"contact")%>" class="btn card-btn1">Contactez-nous</a>
-                                        </div>
-                                      </div>
-                                    </div>
+      <div class="col-xl-4 col-lg-4 col-md-6">
+        <div class="single-card  text-center mb-30">
+          <div class="card-top">
+            <span class="flaticon-project"></span>
+            <h4>Logements T3</h4>
+          </div>
+          <div class="card-bottom">
+            <ul>
+              <li><i class="fas fa-check"></i>Logements de 66 m2</li>
+              <li><i class="fas fa-check"></i>A partir de 644 000 € TTC**</li>
+            </ul>
+          </div>
+          <div class="card-buttons mt-30">
+            <a href="<%=root_path(anchor:"contact")%>" class="btn card-btn1">Contactez-nous</a>
+          </div>
+        </div>
+      </div>
 
-                                    <div class="col-xl-4 col-lg-4 col-md-6">
-                                      <div class="single-card text-center mb-30">
-                                        <div class="card-top">
-                                          <span class="flaticon-award"></span>
-                                          <h4>Suite Duplex</h4>
-                                        </div>
-                                        <div class="card-bottom">
-                                          <ul>
-                                            <li><i class="fas fa-check"></i>Suites duplex de 48 à 139 m2</li>
-                                            <li><i class="fas fa-check"></i>A partir de 708 000 € TTC**</li>
-                                          </ul>
-                                        </div>
-                                        <div class="card-buttons mt-30">
-                                          <a href="<%=root_path(anchor:"contact")%>" class="btn card-btn1">Contactez-nous</a>
-                                        </div>
-                                      </div>
-                                    </div>
+      <div class="col-xl-4 col-lg-4 col-md-6">
+        <div class="single-card text-center mb-30">
+          <div class="card-top">
+            <span class="flaticon-award"></span>
+            <h4>Suite Duplex</h4>
+          </div>
+          <div class="card-bottom">
+            <ul>
+              <li><i class="fas fa-check"></i>Suites duplex de 48 à 139 m2</li>
+              <li><i class="fas fa-check"></i>A partir de 708 000 € TTC**</li>
+            </ul>
+          </div>
+          <div class="card-buttons mt-30">
+            <a href="<%=root_path(anchor:"contact")%>" class="btn card-btn1">Contactez-nous</a>
+          </div>
+        </div>
+      </div>
 
-                                    <!-- Section Tittle -->
-                                    <div class="row d-flex justify-content-center mb-4 pb-4">
-                                      <div class="col-lg-10">
-                                        <div class=" text-center my-4 py-4">
-                                          <h4 class="my-4 py-4">Nous vous offrons la possibilité d’acquérir une chambre ou une suite, meublée au sein d’une résidence à vocation touristique permettant à votre gestionnaire d’organiser la fourniture d’au moins 3 des 4 prestations para-hôtelières suivantes :</h4>
-                                        </div>
-                                      </div>
-                                    </div>
-
-
-                                  </div>
-                                </div>
-                              </section>
-                              <!-- Services Card End -->
+      <!-- Section Tittle -->
+      <div class="row d-flex justify-content-center mb-4 pb-4">
+        <div class="col-lg-10">
+          <div class=" text-center my-4 py-4">
+            <h4 class="my-4 py-4">Nous vous offrons la possibilité d’acquérir une chambre ou une suite, meublée au sein d’une résidence à vocation touristique permettant à votre gestionnaire d’organiser la fourniture d’au moins 3 des 4 prestations para-hôtelières suivantes :</h4>
+          </div>
+        </div>
+      </div>
 
 
-                              <!--? Count Down Start -->
-                              <div class="count-down-area">
-                                <div class="container">
-                                  <div class="row justify-content-center">
-                                    <div class="col-lg-12 col-md-12">
-                                      <div class="count-down-wrapper" style="background-color:#10384E; border-radius : 0 24px 0 24px ;">
-                                        <div class="row justify-content-between">
-                                          <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <!-- Counter Up -->
-                                            <div class="single-counter text-center">
-                                              <span class="counter pt-4"><%= image_tag('croissant.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
-                                              <p>Petit déjeuner</p>
-                                            </div>
-                                          </div>
-                                          <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <!-- Counter Up -->
-                                            <div class="single-counter active text-center">
-                                              <span class="counter pt-4">                <%= image_tag('menage.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
-                                              <p>Nettoyage quotidien des locaux</p>
-                                            </div>
-                                          </div>
-                                          <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <!-- Counter Up -->
-                                            <div class="single-counter text-center">
-                                              <span class="counter pt-4">             <%= image_tag('laundry.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
-                                              <p>Fourniture du linge</p>
-                                            </div>
-                                          </div>
-                                          <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <!-- Counter Up -->
-                                            <div class="single-counter text-center">
-                                              <span class="counter pt-4">                <%= image_tag('client.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
-                                              <p>Réception de la clientèle</p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Count Down End -->
+    </div>
+  </div>
+</section>
+<!-- Services Card End -->
 
 
-                              <!-- Section Tittle -->
-                              <div class="row d-flex justify-content-center">
-                                <div class="col-lg-8">
-                                  <div class=" ">
-                                    <h4 class="mb-4 pb-4 text-center">Si ces conditions sont réunies, l’ensemble de la prestation (assimilée à une activité hôtelière) est soumis à la TVA. L’acquéreur peut alors récupérer la TVA qu’il a acquittée sur le prix de l’acquisition des murs et du mobilier (taux de TVA en vigueur).</h4>
-                                    <p style="margin-bottom:2em;">
-                                      Cette récupération est totalement acquise au bout de 20 ans de détention (au bout de 5 ans pour le mobilier). En cas de revente anticipée, la TVA est remboursable au prorata de la différence d’années de détention, sauf si le nouvel acquéreur reprend le mandat de gestion jusqu’au terme des 20 ans.</p>
-                                    </div>
-
-                                    <div style="padding-bottom:2em; text-align:center;">
-                                      <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
-                                      <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
-                                    </div>
-
-                                    <p class="p-font4 mb-4 pb-4">
-                                      *Rentabilité donnée à titre indicatif et sous conditions. La location sous le régime de la parahôtellerie nécessite la mise en œuvre d’au moins trois des prestations suivantes : fourniture du petit-déjeuner, nettoyage régulier des locaux, fourniture du linge de maison, réception de la clientèle. Elle permet la récupération intégrale de la TVA (20%) payée lors de l’acquisition du bien, sous condition d’engagement de location. Comme tout investissement, investir dans l’immobilier peut présenter des risques.
-                                      <br><br>
-                                      **Prix TTC, incluant une TVA récupérable de 20%. Dans la limite des stocks disponibles.
-                                    </P>
-
-
-                                  </div>
-                                </div>
-
-
-
-                                <!-- ======= Contact Us Section ======= -->
-                                <section class="contact" id="contact">
-                                  <div class="container ">
-
-                                    <h2 class="pb-4 mb-4" >Vous êtes séduit par notre résidence ? Contactez-nous.</h2>
-
-                                    <div class="row">
-
-                                      <div class="col-lg-6 pt-4" data-aos="fade-up" >
-
-                                        <h3><i class="fas fa-phone pr-4 pb-4"></i> Appelez-nous</h3>
-                                        <p style="font-size:28px;">04 67 57 11 26</p>
-
-                                        <p class="p-font3 pr-4 mr-4 pt-4 mt-4">Vous êtes intéressé par <strong>Vibes Resort</strong> ? Vous souhaitez obtenir davantage d'informations sur notre résidence ? <strong>Remplissez le formulaire suivant, nous vous recontacterons</strong> !</p>
-
-
-                                      </div>
-
-
-                                      <div class="col-lg-6">
-
-                                        <% flash.each do |type, msg| %>
-                                        <div class="alert alert-info margin-top:100px;" style="z-index:1">
-                                          <%= msg %>
-                                        </div>
-                                        <% end %>
-
-                                        <%= form_tag url_for(contact_index_path), :contact => @contact, id: 'contact-form', method: 'post' do %>
-                                        <div class="row php-email-form" >
-                                          <div class="col-md-6">
-                                            <div class="form-group">
-                                              <%= text_field_tag 'name', nil, placeholder: 'Nom*', class:"form-control" %>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6">
-                                            <div class="form-group">
-                                              <%= text_field_tag 'firstname', nil, placeholder: 'Prénom*', class:"form-control" %>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-12">
-                                            <div class="form-group">
-                                              <%= text_field_tag 'phone', nil, placeholder: "Téléphone-portable", class:"form-control" %>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-12">
-                                            <div class="form-group">
-                                              <%= text_field_tag 'email', nil, placeholder: "E-mail*", class:"form-control" %>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-12">
-                                            <div class="form-group">
-                                              <%= text_area_tag 'message', nil, placeholder: "Message", rows:"4", class:"form-control" %>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-12">
-                                            <p class="p-font4">Je suis intéressé(e) par:</p>
-                                          </div>
-                                          <div class="col-md-3">
-                                            <div class="form-group">
-                                              <p class="p-font4"><%= check_box_tag 'room' %> Chambre</p>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-9">
-                                            <div class="form-group">
-                                              <p class="p-font4"><%= check_box_tag 'suite' %> Suite</p>
-                                            </div>
-                                          </div>
-                                          <div class="submit-button text-left">
-                                            <%= submit_tag "    Envoyer    ", class: "btn-get-started pr-3 pl-4", style:"border-radius:20px;" %>
-                                            <%end%>
-                                          </div>
-                                          <div class="col-md-12">
-                                            <p class="p-font4">*Champs obligatoires</p>
-                                            <p class="p-font4 "><i> En soumettant ce formulaire, vous acceptez que vos données personnelles soient utilisées pour vous contacter dans le cadre de votre demande indiquée dans ce formulaire. Aucun autre traitement ne sera effectué avec vos informations.</i></p>
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                    </div>
-
-                                  </div>
-                                </section><!-- End Contact Us Section -->
+<!--? Count Down Start -->
+<div class="count-down-area">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 col-md-12">
+        <div class="count-down-wrapper" style="background-color:#10384E; border-radius : 0 24px 0 24px ;">
+          <div class="row justify-content-between">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <!-- Counter Up -->
+              <div class="single-counter text-center">
+                <span class="counter pt-4"><%= image_tag('croissant.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
+                <p>Petit déjeuner</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <!-- Counter Up -->
+              <div class="single-counter active text-center">
+                <span class="counter pt-4">                <%= image_tag('menage.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
+                <p>Nettoyage quotidien des locaux</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <!-- Counter Up -->
+              <div class="single-counter text-center">
+                <span class="counter pt-4">             <%= image_tag('laundry.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
+                <p>Fourniture du linge</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <!-- Counter Up -->
+              <div class="single-counter text-center">
+                <span class="counter pt-4">                <%= image_tag('client.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
+                <p>Réception de la clientèle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Count Down End -->
 
 
+<!-- Section Tittle -->
+<div class="row d-flex justify-content-center">
+  <div class="col-lg-8">
+    <div class=" ">
+      <h4 class="mb-4 pb-4 text-center">Si ces conditions sont réunies, l’ensemble de la prestation (assimilée à une activité hôtelière) est soumis à la TVA. L’acquéreur peut alors récupérer la TVA qu’il a acquittée sur le prix de l’acquisition des murs et du mobilier (taux de TVA en vigueur).</h4>
+      <p style="margin-bottom:2em;">
+        Cette récupération est totalement acquise au bout de 20 ans de détention (au bout de 5 ans pour le mobilier). En cas de revente anticipée, la TVA est remboursable au prorata de la différence d’années de détention, sauf si le nouvel acquéreur reprend le mandat de gestion jusqu’au terme des 20 ans.</p>
+      </div>
+
+      <div style="padding-bottom:2em; text-align:center;">
+        <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
+        <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
+      </div>
+
+      <p class="p-font4 mb-4 pb-4">
+        *Rentabilité donnée à titre indicatif et sous conditions. La location sous le régime de la parahôtellerie nécessite la mise en œuvre d’au moins trois des prestations suivantes : fourniture du petit-déjeuner, nettoyage régulier des locaux, fourniture du linge de maison, réception de la clientèle. Elle permet la récupération intégrale de la TVA (20%) payée lors de l’acquisition du bien, sous condition d’engagement de location. Comme tout investissement, investir dans l’immobilier peut présenter des risques.
+        <br><br>
+        **Prix TTC, incluant une TVA récupérable de 20%. Dans la limite des stocks disponibles.
+      </P>
+
+
+    </div>
+  </div>
+
+
+
+  <!-- ======= Contact Us Section ======= -->
+  <section class="contact" id="contact">
+    <div class="container ">
+
+      <h2 class="pb-4 mb-4" >Vous êtes séduit par notre résidence ? Contactez-nous.</h2>
+
+      <div class="row">
+
+        <div class="col-lg-6 pt-4" data-aos="fade-up" >
+
+          <h3><i class="fas fa-phone pr-4 pb-4"></i> Appelez-nous</h3>
+          <p style="font-size:28px;">04 67 57 11 26</p>
+
+          <p class="p-font3 pr-4 mr-4 pt-4 mt-4">Vous êtes intéressé par <strong>Vibes Resort</strong> ? Vous souhaitez obtenir davantage d'informations sur notre résidence ? <strong>Remplissez le formulaire suivant, nous vous recontacterons</strong> !</p>
+
+
+        </div>
+
+
+        <div class="col-lg-6">
+
+          <% flash.each do |type, msg| %>
+          <div class="alert alert-info margin-top:100px;" style="z-index:1">
+            <%= msg %>
+          </div>
+          <% end %>
+
+          <%= form_tag url_for(contact_index_path), :contact => @contact, id: 'contact-form', method: 'post' do %>
+          <div class="row php-email-form" >
+            <div class="col-md-6">
+              <div class="form-group">
+                <%= text_field_tag 'name', nil, placeholder: 'Nom*', class:"form-control" %>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <%= text_field_tag 'firstname', nil, placeholder: 'Prénom*', class:"form-control" %>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <%= text_field_tag 'phone', nil, placeholder: "Téléphone-portable", class:"form-control" %>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <%= text_field_tag 'email', nil, placeholder: "E-mail*", class:"form-control" %>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <%= text_area_tag 'message', nil, placeholder: "Message", rows:"4", class:"form-control" %>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <p class="p-font4">Je suis intéressé(e) par:</p>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <p class="p-font4"><%= check_box_tag 'room' %> Chambre</p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="form-group">
+                <p class="p-font4"><%= check_box_tag 'suite' %> Suite</p>
+              </div>
+            </div>
+            <div class="submit-button text-left">
+              <%= submit_tag "    Envoyer    ", class: "btn-get-started pr-3 pl-4", style:"border-radius:20px;" %>
+              <%end%>
+            </div>
+            <div class="col-md-12">
+              <p class="p-font4">*Champs obligatoires</p>
+              <p class="p-font4 "><i> En soumettant ce formulaire, vous acceptez que vos données personnelles soient utilisées pour vous contacter dans le cadre de votre demande indiquée dans ce formulaire. Aucun autre traitement ne sera effectué avec vos informations.</i></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Us Section -->
 
 
 
 
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.83894318208!2d3.5229999999999992!3d43.2966944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE3JzQ4LjEiTiAzwrAzMScyMi44IkU!5e0!3m2!1sfr!2sfr!4v1594023094804!5m2!1sfr!2sfr" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.83894318208!2d3.5229999999999992!3d43.2966944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE3JzQ4LjEiTiAzwrAzMScyMi44IkU!5e0!3m2!1sfr!2sfr!4v1594023094804!5m2!1sfr!2sfr" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
