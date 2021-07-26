@@ -68,8 +68,9 @@
 
         <div class="col-xs-12 col-sm-12 col-lg-5 col-md-6" style="background-color:#10384E;height:34em; align-items:center;display:flex;">
 
-          <p class="my-4 mx-4" style="font-size:32px; color:white; font-weight:lighter; text-align:center;"> Cette <span style="font-weight:600;">résidence de tourisme de luxe</span> est idéale pour valoriser votre patrimoine, avec une <span style="font-weight:600;">rentabilité prévisionnelle entre 5 et 6 %</span> et la récupération possible de la TVA*.<br><br>
-          <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto text-center mx-auto", id:"village"%></p>
+          <p class="my-4 mx-4" style="font-size:30px; color:white; font-weight:lighter; text-align:center;"> Cette <span style="font-weight:600;">résidence de tourisme de luxe</span> est idéale pour valoriser votre patrimoine, avec une <span style="font-weight:600;">rentabilité prévisionnelle entre 5 et 6 %</span> et la récupération possible de la TVA*.<br><br>
+          <%= link_to "Télécharger la plaquette", new_plaquette_path, class:"primary-btn visibleBorderLeftRight", id:"village"%></p>
+
 
 
          </div>
@@ -112,7 +113,7 @@
                     appartements privés, piscine et jacuzzis, bar lounge
                     et restaurant, sur une terrasse panoramique à la vue imprenable. Un véritable appel au lâcher prise et à la volupté sur fond azur !</p>
 
-                    <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto text-center mx-auto", id:"village"%>
+                    <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "primary-btn visibleBorderLeftRight animate__animated animate__fadeInUp scrollto text-center mx-auto", id:"village"%>
                     <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
 
                   </div>
@@ -125,7 +126,7 @@
 
 
 
-<div class="jumbotron mt-4"  style="background-image: url(<%=asset_path "section_bg1.png"%>);">
+<div class="jumbotron mt-4"  style="background-image: url(<%=asset_path "section_bg11.png"%>);">
   <div class="row d-flex" style="justify-content:center;" >
 
 <!-- CAROUSEL Village
@@ -193,33 +194,29 @@
 
 
       <!-- Gallery-2 img Start-->
-      <div class="gallery-area2 fix" >
+      <div class="gallery-area2 fix mb-4" >
         <div class="row">
-          <div class="gallery-img col-sm-6 col-lg-3">
+          <div class="gallery-img col-sm-6 col-lg-4">
             <%=image_tag("village-naturiste-cap-agde.webp", style:"width:100%; height:auto; object-fit:cover;")%>
           </div>
-          <div class="gallery-img col-sm-6 col-lg-3">
+          <div class="gallery-img col-sm-6 col-lg-4">
             <%=image_tag("port-cap-agde2.webp", style:"width:100%; height:auto; object-fit:cover;")%>
           </div>
-          <div class="gallery-img col-sm-6 col-lg-3">
+          <div class="gallery-img col-sm-6 col-lg-4">
             <%=image_tag("plage-cap-agde.webp", style:"width:100%; height:auto; object-fit:cover;")%>
           </div>
-          <div class="gallery-img col-sm-6 col-lg-3">
-            <%=image_tag("port-cap-agde.webp", style:"width:100%; height:auto; object-fit:cover;")%>
           </div>
         </div>
       </div>
       <!-- Gallery-2 img End-->
 
 
-    </div>
 
 
 
+<div id="architecture" class="jumbotron-archi active " style="background-image:url(<%= asset_path 'vibes-resort-1.webp' %>) ; background-position: bottom; margin-top:-2em; height:48em;  justify-content:center;">
 
-<div id="architecture" class="jumbotron-archi active " style="background-image:url(<%= asset_path 'vibes-resort-1.webp' %>) ; background-position:bottom; margin-top:-2em;">
-
-  <div class="container archi text-center" style="padding-top :6em; padding-bottom:6em;" >
+  <div class="container archi text-center">
     <h2 class="mb-4 pb-4" > L'Architecture</h2>
 
     <p class="p-font3 w-80 mx-auto" > Signé par l’<strong>agence montpelliéraine <a href="http://www.aplus-architecture.com/agence/presentation/" target="_blank">A+ Architecture</a></strong>,
@@ -230,8 +227,7 @@
       de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
 
 
-      <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started" %>
-      <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
+      <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "mt-4 primary-btn2 visibleBorderLeftRight2 animate__animated animate__fadeInUp scrollto" %>
 
 
   </div>
@@ -302,10 +298,10 @@
 
 <div class="row " style="padding:2em; display:flex; align-items:center; justify-content:center;" id="appartements">
 
-  <div class="col-xs-12 col-sm-12 col-lg-3 col-md-6 pt-4 mt-4 pb-4 mb-4 mr-4 pr-4">
+  <div class="col-xs-12 col-sm-12 col-lg-10 col-md-10 pt-4 mt-4 ">
 
 
-    <h2 style="font-size:42px; text-align:right;"> Les <br> Appartements</h2>
+    <h2 style="font-size:42px; text-align:center;"> Les Appartements</h2>
 
   <!--  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -358,19 +354,19 @@
   </div>
 
 
-        <div class="col-xs-12 col-sm-12 col-lg-5 col-md-6">
+        <div class="col-xs-12 col-sm-12 col-lg-8 col-md-10">
 
           <div class="container text-center  mx-auto archi2 "  data-aos="fade-up" data-aos-delay="100">
           <!--  <h2 class="mb-4 pb-4"> Les Appartements </h2>-->
 
-            <p class="p-font2"> Rejoignez vos <strong>appartements privés et profitez
+            <p class="p-font2 text-center"> Rejoignez vos <strong>appartements privés et profitez
               d’un confort de grand standing</strong>, que l’on a aussi
               plaisir à faire partager. Des <strong>chambres T1 aux
                 suites 4 pièces</strong>, les <strong>appartements de Vibes Resort</strong>
                 ont ce petit quelque chose en plus qui les rend
                 tellement irrésistibles. </p>
 
-                <p class="p-font2">Décoration et mobilier
+                <p class="p-font2 text-center">Décoration et mobilier
                   design, ambiance feutrée, spacieux volumes,
                   stationnements privatifs sécurisés ; ici, tout est
                   dédié à votre <strong>bien-être</strong>. </p>
@@ -379,65 +375,82 @@
 
         </div>
 
+  </div>
 
 
-        <div class="col-xs-12 col-sm-12 col-lg-5 col-md-6">
-
-          <div class="container text-center  mx-auto archi2 "  data-aos="fade-up" data-aos-delay="100">
-          <!--  <h2 class="mb-4 pb-4"> Les Appartements </h2>-->
-
-            <p class="p-font2">À l’intérieur de la résidence, c’est le domaine privé
-              du luxe et de l’hédonisme. Avec vue panoramique sur
-              le <strong>village naturiste, Port Ambonne et la Méditerranée</strong>,
-              le rooftop de <strong>Vibes Resort est une île privée</strong>, où
-              le temps qui passe se déguste avec raffinement.
-            </p>
-
-            <p class="p-font2"> Appréciez un cocktail dans la piscine, profitez des spas à débordement ou du bar lounge, prélassez-vous sur la large plage en bois, à l’ombre des palmiers… <strong>et
-              c’est toute la douceur du Sud qui s’offre à vous</strong>.</p>
-
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-lg-3 col-md-6 pt-4 pb-4 mb-4 ml-4 pl-4">
-
-
-          <h2 style="font-size:42px; text-align:left;"> Le <br> Rooftop</h2>
-
-
-
-        </div>
-</div>
-
-
-
-
-
-
-
-
-
-
+s
 
     <!-- Gallery-2 img Start-->
     <div class="gallery-area2 fix mb-4 pb-4" >
       <div class="row" style="justify-content:center;">
-        <div class="gallery-img col-sm-6 col-lg-4 mb-4">
-          <a href="#"><%=image_tag("vibes-resort-appartement-2.webp", style:"width:100%; height:20em; object-fit:cover;")%></a>
+        <div class="gallery-img col-sm-6 col-lg-5 mt-2 mb-4">
+          <a href="#"><%=image_tag("vibes-resort-appartement-2.webp", style:"width:100%; height:20em; object-fit:cover; background-position:right")%></a>
         </div>
-        <div class="gallery-img col-sm-6 col-lg-6 mb-4">
-          <a href="#"><%=image_tag("vibes-resort-terrasse-1.webp", style:"width:100%; height:20em; object-fit:cover;")%></a>
-        </div>
-        <div class="gallery-img col-sm-6 col-lg-6 mt-2">
-          <a href="#"><%=image_tag("vibes-resort-appartement-1.webp", style:"width:100%; height:20em; object-fit:cover;")%></a>
-        </div>
-        <div class="gallery-img col-sm-6 col-lg-4 mt-2 mb-4">
-          <a href="#"><%=image_tag("vibes-resort-chambre2.webp", style:"width:100%; height:20em; object-fit:cover;")%></a>
+        <div class="gallery-img col-sm-6 col-lg-5 mt-2">
+          <a href="#"><%=image_tag("chambre-HD2.webp", style:"width:100%; height:20em; object-fit:cover;")%></a>
         </div>
       </div>
     </div>
     <!-- Gallery-2 img End-->
+
+
+
+
+<div class="row " style="padding:2em; display:flex; align-items:center; justify-content:center;" id="appartements">
+
+  <div class="col-xs-12 col-sm-12 col-lg-10 col-md-10 pt-4 ml-4 pl-4">
+
+    <h2 style="font-size:42px; text-align:center;"> Le Rooftop</h2>
+
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-lg-8 col-md-10">
+
+    <div class="container text-center mx-auto archi2 "  data-aos="fade-up" data-aos-delay="100">
+    <!--  <h2 class="mb-4 pb-4"> Les Appartements </h2>-->
+
+      <p class="p-font2 text-center">À l’intérieur de la résidence, c’est le domaine privé
+        du luxe et de l’hédonisme. Avec vue panoramique sur
+        le <strong>village naturiste, Port Ambonne et la Méditerranée</strong>,
+        le rooftop de <strong>Vibes Resort est une île privée</strong>, où
+        le temps qui passe se déguste avec raffinement.
+      </p>
+
+      <p class="p-font2 text-center"> Appréciez un cocktail dans la piscine, profitez des spas à débordement ou du bar lounge, prélassez-vous sur la large plage en bois, à l’ombre des palmiers… <strong>et
+        c’est toute la douceur du Sud qui s’offre à vous</strong>.</p>
+
+      </div>
+
+  </div>
+
+
+</div>
+
+
+<!-- Gallery-2 img Start-->
+<div class="gallery-area2 fix mb-4 pb-4" >
+  <div class="row" style="justify-content:center;">
+    <div class="gallery-img col-sm-6 col-lg-5 mb-4">
+      <a href="#"><%=image_tag("vibes-resort-terrasse-2.webp", style:"width:100%; height:20em; object-fit:cover;")%></a>
+    </div>
+    <div class="gallery-img col-sm-6 col-lg-5 mb-4">
+      <a href="#"><%=image_tag("vibes-resort-terrasse-1.webp", style:"width:100%; height:20em; object-fit:cover;")%></a>
+    </div>
+  </div>
+</div>
+<!-- Gallery-2 img End-->
+
+
+
+<!-- Gallery-2 img Start
+<div class=" fix mt-4 pt-4" style="background-image:url('<%=asset_path "section_bg4.png"%>'); height:24em;">
+  <div class="row" style="display-flex; justify-content:center;">
+    <div class="gallery-img col-sm-6 col-lg-6 mb-4">
+      kzjrzkjer
+    </div>
+  </div>
+</div>
+<!-- Gallery-2 img End-->
 
 
                                   <!--
@@ -504,7 +517,7 @@
 
 
 <!--? Services Start -->
-<section class="pricing-card-area section-padding30 " style="background-image: url(<%=asset_path "section_bg1.png"%>);">
+<section class="pricing-card-area section-padding30 " style="background-image: url(<%=asset_path "section_bg11.png"%>);">
 <div class="container">
   <!-- Section Tittle -->
   <div class="row d-flex justify-content-center">
@@ -599,28 +612,28 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
               <!-- Counter Up -->
               <div class="single-counter text-center">
-                <span class="counter pt-4"><%= image_tag('croissant.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
+                <span class="counter pt-4"><%= image_tag('croissantb.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
                 <p>Petit déjeuner</p>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
               <!-- Counter Up -->
               <div class="single-counter active text-center">
-                <span class="counter pt-4">                <%= image_tag('menage.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
+                <span class="counter pt-4">                <%= image_tag('menageb.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
                 <p>Nettoyage quotidien des locaux</p>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
               <!-- Counter Up -->
               <div class="single-counter text-center">
-                <span class="counter pt-4">             <%= image_tag('laundry.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
+                <span class="counter pt-4">             <%= image_tag('laundryb.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
                 <p>Fourniture du linge</p>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
               <!-- Counter Up -->
               <div class="single-counter text-center">
-                <span class="counter pt-4">                <%= image_tag('client.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
+                <span class="counter pt-4">                <%= image_tag('clientb.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
                 <p>Réception de la clientèle</p>
               </div>
             </div>
@@ -643,8 +656,7 @@
       </div>
 
       <div style="padding-bottom:2em; text-align:center;">
-        <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
-        <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers animate__animated animate__fadeInUp scrollto" %>
+        <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "primary-btn2 visibleBorderLeftRight2 " %>
       </div>
 
       <p class="p-font4 mb-4 pb-4">
@@ -663,7 +675,7 @@
   <section class="contact" id="contact">
     <div class="container ">
 
-      <h2 class="pb-4 mb-4" >Vous êtes séduit par notre résidence ? Contactez-nous.</h2>
+      <h2 class="pb-4 mb-4 text-center" >Vous êtes séduit par notre résidence ? Contactez-nous.</h2>
 
       <div class="row">
 
@@ -742,8 +754,69 @@
     </div>
   </section><!-- End Contact Us Section -->
 
+<!--
+  <div id="booking" class="section" style="background-image:url('<%=asset_path "section_bg1.png"%>')">
+		<div class="section-center my-4">
+			<div class="container">
 
+        <h2 class="pb-4 mb-4 text-center" >Vous êtes séduit par notre résidence ? Contactez-nous.</h2>
 
+				<div class="row">
+					<div class="booking-form mt-4 pt-4">
+						<div class="booking-bg">
+							<div class="form-header">
+								<h3 style="color:white;"><i class="fas fa-phone pr-4 pb-4"></i> 04 67 57 11 26</h3>
+								<p class="mt-4 pt-2">Vous êtes intéressé par <strong>Vibes Resort</strong> ? Vous souhaitez obtenir davantage d'informations sur notre résidence ? <strong><br><br>Remplissez le formulaire suivant, nous vous recontacterons</strong> !</p>
+							</div>
+						</div>
+						<form>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Nom</span>
+										<input class="form-control" type="text" required>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Prénom</span>
+										<input class="form-control" type="text" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">E-mail</span>
+										<select class="form-control">
+
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Numéro de téléphone</span>
+										<select class="form-control">
+
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<span class="form-label">Message</span>
+								<select class="form-control" required>
+
+								</select>
+							</div>
+							<div class="form-btn">
+								<button class="submit-btn">Envoyer</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
 
 
 
