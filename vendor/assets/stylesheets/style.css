@@ -78,9 +78,13 @@ p {
 .jumbotron-archi {
   width: 100%;
   background-size: cover;
-  background-position: top right;
+  background-position: bottom;
   background-repeat: no-repeat;
   overflow: hidden;
+  margin-top:-2em;
+  height:48em;
+  display:flex;
+  align-items:center;
 }
 
 .jumbotron-invest {
@@ -93,13 +97,11 @@ p {
 }
 
 .archi {
-          background: rgba(255, 255, 255, 0.9);
-          margin-left:0;
-          width:50%;
-          margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
-          transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
-          padding-top :6em;
-          padding-bottom:6em;
+    background: rgba(255, 255, 255, 0.94);
+    margin-left:0;
+    width:46%;
+    padding-top :6em;
+    padding-bottom:6em;
 }
 
 @media (max-width: 600px) {
@@ -138,6 +140,8 @@ p {
 
 .navbar{
   height:2.5em;
+  display:flex;
+  justify-content:center;
 }
 
 .padding2 {
@@ -1536,7 +1540,6 @@ section {
   background: #5c768d;
   border-top: 1px solid #768fa6;
   border-bottom: 1px solid #67839c;
-  padding: 60px 0 30px 0;
 }
 
 #footer .footer-top .footer-info {
@@ -1840,6 +1843,34 @@ section {
      transform: scaleX(0);
      transform-origin: bottom right;
  }
+
+
+
+
+ /* button outline */
+ .visibleBorderLeftRight2 {
+     display: inline-block;
+     color: #10394e;
+     position: relative;
+ }
+
+ .visibleBorderLeftRight2::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(1);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #10394e;
+      transform-origin: bottom left;
+      transition: transform .6s cubic-bezier(0.53, 0.21, 0, 1);
+  }
+
+ .visibleBorderLeftRight2:hover::after {
+      transform: scaleX(0);
+      transform-origin: bottom right;
+  }
 
 
 

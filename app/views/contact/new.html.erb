@@ -75,8 +75,11 @@
 
          </div>
 
-         <div class="col-xs-12 col-sm-12 col-lg-5 col-md-6" style="background-image: url(<%= asset_path 'chambre-HD2.webp' %>); background-size:cover; height:34em; object-fit:cover; background-position:left;">
+         <div class="col-xs-12 col-sm-12 col-lg-5 col-md-6" style="background-image: url(<%= asset_path 'chambre-HD2.webp' %>); background-size:cover; height:34em; object-fit:cover; background-position:left; display:flex; justify-content:center; align-items:flex-end;">
 
+          <div class="mb-4 pb-4">
+           <a href="https://maquettes-toutela3d.fr/angelotti/vibes/bat-all.html" class="primary-btn visibleBorderLeftRight2 mb-4" target="_blank">Maquette virtuelle</a>
+          </div>
 
           </div>
 
@@ -88,82 +91,10 @@
 
 
 
-        <!-- ======= About Us Section =======
-        <section id="about" class="about" >
-          <div class="container">
-
-
-            <h1 class="mb-4 pt-4 pb-4 text-center">Vibes Resort au Cap d'Agde, un village, une résidence</h1>
-
-
-            <div class="row mt-4 pt-4" style="align-items:center;">
-
-              <div class="col-xs-12 col-sm-12 col-lg-4 col-md-4 d-none d-lg-block text-center ">
-
-                <%=image_tag("logo-min2.png", :style =>'width:88%;', :alt => 'vibes-resort-logo')%>
-
-              </div>
-
-              <div class="col-xs-12 col-sm-12 col-lg-8 col-md-8">
-
-                <p class="p-font">Situé à l’intérieur du <strong>village naturiste du Cap d'Agde</strong>, Vibes Resort
-                  profite d’un emplacement à la fois incontournable et incomparable, comme un véritable signal d’entrée.</p>
-
-                  <p class="p-font">Cette <strong>résidence de luxe à vocation touristique</strong> abrite
-                    appartements privés, piscine et jacuzzis, bar lounge
-                    et restaurant, sur une terrasse panoramique à la vue imprenable. Un véritable appel au lâcher prise et à la volupté sur fond azur !</p>
-
-                    <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "primary-btn visibleBorderLeftRight animate__animated animate__fadeInUp scrollto text-center mx-auto", id:"village"%>
-                    <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started " %>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </section><!-- End About Us Section -->
-
-
-
 
 <div class="jumbotron mt-4"  style="background-image: url(<%=asset_path "section_bg11.png"%>);">
   <div class="row d-flex" style="justify-content:center;" >
 
-<!-- CAROUSEL Village
-<div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
-
-<div id="carouselExampleIndicators3" class="carousel slide pb-4 mb-4" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
-    <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <%=image_tag("village-naturiste-cap-agde.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'village naturiste cap agde')%>
-    </div>
-    <div class="carousel-item">
-      <%=image_tag("plage-cap-agde.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'plage cap agde')%>
-    </div>
-    <div class="carousel-item">
-      <%=image_tag("port-cap-agde.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'port village naturiste cap agde')%>
-    </div>
-    <div class="carousel-item">
-      <%=image_tag("port-cap-agde2.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'port village naturiste cap agde')%>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-</div> -->
 
 
     <div class="col-xs-12 col-sm-12 col-lg-10 col-md-12 my-4 pb-4 "  >
@@ -214,7 +145,7 @@
 
 
 
-<div id="architecture" class="jumbotron-archi active " style="background-image:url(<%= asset_path 'vibes-resort-1.webp' %>) ; background-position: bottom; margin-top:-2em; height:48em;  justify-content:center;">
+<div id="architecture" class="jumbotron-archi active " style="background-image:url(<%= asset_path 'vibes-resort-cap-agde1.jpg' %>) ;  ">
 
   <div class="container archi text-center">
     <h2 class="mb-4 pb-4" > L'Architecture</h2>
@@ -227,7 +158,9 @@
       de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
 
 
-      <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "mt-4 primary-btn2 visibleBorderLeftRight2 animate__animated animate__fadeInUp scrollto" %>
+      <div class=" pt-4">
+       <a href="https://maquettes-toutela3d.fr/angelotti/vibes/bat-all.html" class="primary-btn visibleBorderLeftRight2 mt-4" target="_blank">Découvrir la maquette virtuelle</a>
+      </div>
 
 
   </div>
@@ -235,65 +168,6 @@
 
 
 
-<!--<div class="row pt-4  pb-4  jumbotron" id="rooftop">
-
-  <div class="col-sx-12 col-sm-12 col-lg-6 col-md-6 pb-4">
-
-
-    <div class="container archi2  jumbotron-blue  text-center mx-auto"  data-aos="fade-up" data-aos-delay="100" >
-      <h2 class="mb-4 pb-4"> Le Rooftop </h2>
-
-      <p class="p-font2">À l’intérieur de la résidence, c’est le domaine privé
-        du luxe et de l’hédonisme. Avec vue panoramique sur
-        le <strong>village naturiste, Port Ambonne et la Méditerranée</strong>,
-        le rooftop de <strong>Vibes Resort est une île privée</strong>, où
-        le temps qui passe se déguste avec raffinement.
-      </p>
-
-      <p class="p-font2"> Appréciez un cocktail dans la piscine, profitez des spas à débordement ou du bar lounge, prélassez-vous sur la large plage en bois, à l’ombre des palmiers… <strong>et
-        c’est toute la douceur du Sud qui s’offre à vous</strong>.</p>
-
-      </div>
-
-  </div>
-
-
-  <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6 padding2">
-
-      <div id="carouselExampleIndicators2" class=" carousel pt-4 mt-4 pb-4" data-ride="carousel" data-interval="30000">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner" >
-          <div class="carousel-item active">
-            <%=image_tag("vibes-resort-terrasse-2.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-          </div>
-          <div class="carousel-item">
-            <%=image_tag("pool.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-          </div>
-          <div class="carousel-item">
-            <%=image_tag("pool-1.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-          </div>
-          <div class="carousel-item">
-            <%=image_tag("pool-2.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-    </div>
-
-  </div>-->
 
 
 <div class="row " style="padding:2em; display:flex; align-items:center; justify-content:center;" id="appartements">
@@ -303,53 +177,7 @@
 
     <h2 style="font-size:42px; text-align:center;"> Les Appartements</h2>
 
-  <!--  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <%=image_tag("chambre-HD2.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-        </div>
-        <div class="carousel-item">
-          <%=image_tag("vibes-resort-chambre.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-        </div>
-        <div class="carousel-item">
-          <%=image_tag("vibes-resort-appartement-3.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-        </div>
-        <div class="carousel-item">
-          <%=image_tag("vibes-resort-appartement-2.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-        </div>
-        <div class="carousel-item">
-          <%=image_tag("vibes-resort-chambre2.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-        </div>
-        <div class="carousel-item">
-          <%=image_tag("vibes-resort-appartement-1.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-        </div>
-        <div class="carousel-item">
-          <%=image_tag("vibes-resort-terrasse-1.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-        </div>
-        <div class="carousel-item">
-          <%=image_tag("salle-bain.webp", :class => "d-block w-100", :style => " height: 28em; width: 100%; object-fit: cover;", :alt => 'vibes resort résidence cap agde')%>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>-->
+
 
   </div>
 
@@ -440,80 +268,6 @@ s
 </div>
 <!-- Gallery-2 img End-->
 
-
-
-<!-- Gallery-2 img Start
-<div class=" fix mt-4 pt-4" style="background-image:url('<%=asset_path "section_bg4.png"%>'); height:24em;">
-  <div class="row" style="display-flex; justify-content:center;">
-    <div class="gallery-img col-sm-6 col-lg-6 mb-4">
-      kzjrzkjer
-    </div>
-  </div>
-</div>
-<!-- Gallery-2 img End-->
-
-
-                                  <!--
-                                  <div class="jumbotron-invest active ">
-
-                                  <div class="container invest text-center" style="padding-top:6em;" id="proprietaire">
-                                  <h2 class="mb-4 pb-4">Devenir Propriétaire</h2>
-
-                                  <p class="p-font2 my-4 pb-4" style="font-size:20px; text-align:center;">
-                                  <strong>Cette résidence de tourisme de luxe est idéale pour valoriser votre patrimoine,<br> avec une rentabilité prévisionnelle entre 5 et 6 % et la récupération possible de la TVA*.</strong></p>
-
-                                  <p class="p-font2">
-                                  Nous vous offrons la <strong>possibilité d’acquérir une chambre
-                                  ou une suite</strong>, meublée au sein d’une <strong>résidence à vocation
-                                  touristique</strong> permettant à votre gestionnaire d’<strong>organiser la
-                                  fourniture d’au moins 3 des 4 prestations para-hôtelières</strong>
-                                  suivantes :<br><br>
-
-                                </p>
-
-
-                                <div class="row text-center mx-auto">
-
-                                <div class="col-xs-12 col-sm-12 col-lg-3 col-md-3">
-                                <%= image_tag('croissant.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%>
-                                <p class="p-font3 text-center">Le petit déjeuner</p>
-                              </div>
-                              <div class="col-xs-12 col-sm-12 col-lg-3 col-md-3">
-                                <%= image_tag('menage.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%>
-                                <p class="p-font3 text-center">Le nettoyage quotidien des locaux</p>
-                              </div>
-                              <div class="col-xs-12 col-sm-12 col-lg-3 col-md-3">
-                                <%= image_tag('laundry.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%>
-                                <p class="p-font3 text-center">La fourniture du linge</p>
-                              </div>
-                              <div class="col-xs-12 col-sm-12 col-lg-3 col-md-3">
-                                <%= image_tag('client.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%>
-                                <p class="p-font3 text-center">La réception de la clientèle</p>
-                              </div>
-
-                            </div>
-
-
-                            <p class="p-font2 pb-4 mb-4 pt-4">
-
-                              Si ces conditions sont réunies, <strong>l’ensemble de la prestation
-                                (assimilée à une activité hôtelière) est soumis à la TVA</strong>.
-                                L’acquéreur peut alors récupérer la TVA qu’il a acquittée
-                                sur le prix de l’acquisition des murs et du mobilier (taux
-                                de TVA en vigueur). <br><br>
-                                Cette <strong>récupération est totalement
-                                  acquise au bout de 20 ans de détention</strong> (au bout de 5 ans
-                                  pour le mobilier). En cas de revente anticipée, la TVA est
-                                  remboursable au prorata de la différence d’années de
-                                  détention, sauf si le nouvel acquéreur reprend le mandat
-                                  de gestion jusqu’au terme des 20 ans.</p>
-
-
-                                </DIV>
-
-                              </div>
-
-                            -->
 
 
 <!--? Services Start -->
