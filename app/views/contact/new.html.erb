@@ -20,7 +20,7 @@
               </div>
               <% end %>
 
-              <p style="font-size:24px; text-transform: uppercase; font-weight:600;">Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
+              <p style="font-size:19px; text-transform: uppercase; font-weight:800;">Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
                 à la fois intime et convivial, avec des équipements de
                 haut standing et un niveau de confort sans pareil.</p>
 
@@ -206,7 +206,7 @@
   </div>
 
 
-s
+
 
     <!-- Gallery-2 img Start-->
     <div class="gallery-area2 fix mb-4 pb-4" >
@@ -299,7 +299,7 @@ s
             </ul>
           </div>
           <div class="card-buttons mt-30">
-            <a href="<%=root_path(anchor:"contact")%>" class="btn card-btn1">Contactez-nous</a>
+            <a href="<%=root_path(anchor:"contact")%>" class="primary-btn visibleBorderLeftRight2 mt-4">Contactez-nous</a>
           </div>
         </div>
       </div>
@@ -317,7 +317,7 @@ s
             </ul>
           </div>
           <div class="card-buttons mt-30">
-            <a href="<%=root_path(anchor:"contact")%>" class="btn card-btn1">Contactez-nous</a>
+            <a href="<%=root_path(anchor:"contact")%>" class="primary-btn visibleBorderLeftRight2 mt-4">Contactez-nous</a>
           </div>
         </div>
       </div>
@@ -335,7 +335,7 @@ s
             </ul>
           </div>
           <div class="card-buttons mt-30">
-            <a href="<%=root_path(anchor:"contact")%>" class="btn card-btn1">Contactez-nous</a>
+            <a href="<%=root_path(anchor:"contact")%>" class="primary-btn visibleBorderLeftRight2 mt-4">Contactez-nous</a>
           </div>
         </div>
       </div>
@@ -425,7 +425,7 @@ s
 
 
 
-  <!-- ======= Contact Us Section ======= -->
+  <!-- ======= Contact Us Section =======
   <section class="contact" id="contact">
     <div class="container ">
 
@@ -507,6 +507,104 @@ s
 
     </div>
   </section><!-- End Contact Us Section -->
+
+
+
+  <div class="content" style="background-image:url('<%=asset_path "vibes-resort-cap-agde3.jpg"%>'); background-size:cover;" id="contact">
+
+     <div class="container container2">
+       <div class="row align-items-stretch no-gutters contact-wrap">
+
+
+         <div class="col-md-4">
+           <div class="contact-info h-100">
+             <p class="mb-5 mt-4 pt-4">Vous êtes intéressé par <strong>Vibes Resort</strong> ? Vous souhaitez obtenir davantage d'informations sur notre résidence ? <br><br><strong>Remplissez le formulaire suivant, nous vous recontacterons</strong> !</p>
+
+             <h2 class="mb-4">Appelez-nous</h2>
+
+             <h3 class="pt-4"><i class="fas fa-phone pr-4 pb-4"></i> 04 67 57 11 26</h3>
+           </div>
+         </div>
+
+
+
+         <div class="col-md-8">
+           <div class="form h-100 pt-4">
+
+
+
+               <%= form_tag url_for(contact_index_path), :contact => @contact, id: 'contact-form', method: 'post' do %>
+
+
+               <div class="row mt-4 pt-4">
+                 <div class="col-md-6 form-group mb-5">
+                   <label for="" class="col-form-label">Nom *</label>
+                   <%= text_field_tag 'name', nil, class:"form-control" %>
+                 </div>
+                 <div class="col-md-6 form-group mb-5">
+                   <label for="" class="col-form-label">Prénom *</label>
+                   <%= text_field_tag 'firstname', nil, class:"form-control" %>
+                 </div>
+               </div>
+
+               <div class="row">
+                 <div class="col-md-6 form-group mb-5">
+                   <label for="" class="col-form-label">E-mail *</label>
+                   <%= text_field_tag 'email', nil, class:"form-control" %>
+                 </div>
+                 <div class="col-md-6 form-group mb-5">
+                   <label for="" class="col-form-label">Numéro de Téléphone</label>
+                   <%= text_field_tag 'phone', nil, class:"form-control" %>
+                 </div>
+               </div>
+
+               <div class="row mb-4">
+               <div class="col-md-4">
+                 <div class="form-group">
+                   <p class="p-font4"><%= check_box_tag 'room' %> Chambre</p>
+                 </div>
+               </div>
+               <div class="col-md-8">
+                 <div class="form-group">
+                   <p class="p-font4"><%= check_box_tag 'suite' %> Suite</p>
+                 </div>
+               </div>
+               </div>
+
+
+               <div class="row">
+                 <div class="col-md-12 form-group mb-5">
+                   <label for="message" class="col-form-label">Message *</label>
+                   <%= text_area_tag 'message', nil, placeholder: "Ecrivez votre message", rows:"3", class:"form-control" %>
+                 </div>
+               </div>
+
+
+               <div class="row">
+
+                 <div class="col-md-12 form-group">
+                   <%= submit_tag "    Envoyer    ", class: "btn btn-primary rounded-0 py-2 px-4", style:"border-radius:20px;" %>
+                   <%end%>
+                 </div>
+
+                 <div class="col-md-12">
+                   <p class="p-font4">*Champs obligatoires</p>
+                   <p class="p-font4 "><i> En soumettant ce formulaire, vous acceptez que vos données personnelles soient utilisées pour vous contacter dans le cadre de votre demande indiquée dans ce formulaire. Aucun autre traitement ne sera effectué avec vos informations.</i></p>
+                 </div>
+
+               </div>
+
+
+           </div>
+         </div>
+
+
+       </div>
+     </div>
+
+   </div>
+
+
 
 <!--
   <div id="booking" class="section" style="background-image:url('<%=asset_path "section_bg1.png"%>')">
