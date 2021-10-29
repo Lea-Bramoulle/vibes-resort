@@ -8553,14 +8553,13 @@ License - nucleoapp.com/license/
 
     .red-box {
       width: 100vw;
-      height: 105vh;
+      height: 900px;
       z-index: 1000;
-      margin-top:-98vh;
+      margin-top:-100vh;
     }
 
     .blue-box {
       position: absolute;
-      height: 80vh;
       z-index: 1001;
       padding: 20px;
       margin-left:10em;
