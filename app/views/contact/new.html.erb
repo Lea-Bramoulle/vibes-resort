@@ -1,581 +1,443 @@
 
 
-<section id="hero">
-  <div class="hero-container">
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-      <div class="carousel-inner" role="listbox">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(<%= asset_path 'vibes-resort-terrasse-2.webp' %>) ; background-position: center; ">
-          <div class="carousel-container">
-            <div class="carousel-content container">
-              <h2 class="animate__animated animate__fadeInDown" style="text-transform: uppercase; margin-top:-2em;">Vibes Resort</h2>
-
-              <% flash.each do |type, msg| %>
-              <div class="alert alert-info margin-top:100px;" style="z-index:1">
-                <%= msg %>
-              </div>
-              <% end %>
-
-              <p style="font-size:19px; text-transform: uppercase; font-weight:800;">Vibes Resort, nouvelle résidence au Cap d'Agde, est né de l’idée d’offrir un lieu d’exception
-                à la fois intime et convivial, avec des équipements de
-                haut standing et un niveau de confort sans pareil.</p>
 
 
-              <div class="mt-4 pt-4">
-                <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "btn-get-started" %>
-                <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn-invers " %>
-              </div>
-
-
-              </div>
-            </div>
-          </div>
-
-
-            </div>
-
-          </div>
+  <div class="page-header section-dark" style="background-image: url(<%= asset_path 'vibes-resort-terrasse-2.webp' %>);">
+    <div class="filter"></div>
+    <div class="content-center">
+      <div class="container">
+        <div class="title-brand">
+          <h1 class="presentation-title"> </h1>
         </div>
-      </section><!-- End Hero -->
+        <p class="presentation-subtitle text-center white pb-4" ><strong>DEVENEZ PROPRIÉTAIRE D’UN LOGEMENT DANS UNE RÉSIDENCE DE TOURISME DE LUXE</strong><br>
+        ET INVESTISSEZ AU SEIN DU PLUS GRAND VILLAGE NATURISTE D’EUROPE.</p>
+        <div class="text-center mt-4">
+          <a href="https://maquettes-toutela3d.fr/angelotti/vibes/bat-all.html" target="_blank" class="btn btn-primary-outline mr-2">Maquette virtuelle</a>
+          <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn btn-primary ml-2" %>
+
+        </div>
+      </div>
+    </div>
+
+    <p class="category category-absolute d-none d-md-block" style="  color: #d0b178;">Cette résidence de tourisme de luxe est idéale pour valoriser votre patrimoine, <br>avec une rentabilité prévisionnelle entre 5 et 7 % et la récupération possible de la TVA*.
+    </p>
+
+  </div>
 
 
 
 
-  <!-- ======= About Us Section ======= -->
-  <section id="about" class="about" >
+  <section>
+
+
     <div class="container">
 
+      <div class="row d-flex justify-content-between align-items-center mt-4 pt-4" >
 
-      <h1 class="mb-4 pt-4 pb-4 text-center">Vibes Resort au Cap d'Agde, un village, une résidence</h1>
+        <div class="col-md-5 my-4 py-4 px-4">
 
+          <h3 class="h3-trait">Le Village </h3>
 
-      <div class="row my-4 py-4" style="align-items:center; justify-content:center; ">
+          <h2>Le Cap d'Agde</h2>
 
-        <div class="col-xs-12 col-sm-12 col-lg-10 col-md-10 d-none d-lg-block mb-4 pb-4 ">
+          <p class="mt-4 pt-4 dark">Situé à l’intérieur du village naturiste du Cap d'Agde, Vibes Resort profite d’un emplacement à la fois incontournable et incomparable, comme un véritable signal d’entrée.</p>
 
-          <p class="p-font text-center">Situé à l’intérieur du <strong>village naturiste du Cap d'Agde</strong>, Vibes Resort
-            profite d’un emplacement à la fois incontournable et incomparable, comme un véritable signal d’entrée.</p>
-
-          <p class="p-font text-center mb-4">Ce <strong>programme neuf de luxe à vocation touristique</strong> abrite
-          appartements privés, piscine et jacuzzis, bar lounge
-          et restaurant, sur une terrasse panoramique à la vue imprenable. Un véritable appel au lâcher prise et à la volupté sur fond azur !</p>
+          <p class="pt-4 dark">Ce <span class="bold" >programme neuf de luxe à vocation touristique</span> abrite appartements privés, piscine et jacuzzis, bar lounge et restaurant, sur une terrasse panoramique à la vue imprenable. Un véritable appel au lâcher prise et à la volupté sur fond azur !</p>
 
         </div>
 
-        <div class="col-xs-12 col-sm-12 col-lg-5 col-md-6" style="background-color:#10384E;height:34em; align-items:center;display:flex;">
+        <div class="col-md-6 text-center mt-4">
 
-          <p class="my-4 mx-4" style="font-size:30px; color:white; font-weight:lighter; text-align:center;"> Cette <span style="font-weight:600;">résidence de tourisme de luxe</span> est idéale pour valoriser votre patrimoine, avec une <span style="font-weight:600;">rentabilité prévisionnelle entre 5 et 6 %</span><br> et la récupération possible <br>de la TVA*.<br><br>
-          <%= link_to "Télécharger la plaquette", new_plaquette_path, class:"primary-btn visibleBorderLeftRight", id:"village"%></p>
+          <%=image_tag("cap-agde2.png", style:"width:110%;height:auto; margin-top:4em;", class:"d-none d-md-block")%>
 
-
-
-         </div>
-
-         <div class="col-xs-12 col-sm-12 col-lg-5 col-md-6" style="background-image: url(<%= asset_path 'chambre-HD2.webp' %>); background-size:cover; height:34em; object-fit:cover; background-position:left; display:flex; justify-content:center; align-items:flex-end;">
-
-          <div class="mb-4 pb-4">
-           <a href="https://maquettes-toutela3d.fr/angelotti/vibes/bat-all.html" class="primary-btn visibleBorderLeftRight2 mb-4" target="_blank">Maquette virtuelle</a>
-          </div>
-
-          </div>
-
-
-          </div>
 
         </div>
-      </section><!-- End About Us Section -->
-
-
-
-
-<div class="jumbotron mt-4"  style="background-image: url(<%=asset_path "section_bg11.png"%>);">
-  <div class="row d-flex" style="justify-content:center;" >
-
-
-
-    <div class="col-xs-12 col-sm-12 col-lg-10 col-md-12 my-4 pb-4 "  >
-
-          <h2 class="text-center"> Le Village naturiste du Cap d'Agde </h2>
-
-          <p class="p-font2 pt-4 mt-4 w-80 mx-auto"> Créé dans les années 1970 aux portes de la réserve
-            naturelle du Bagnas, le <strong>village naturiste du Cap
-              d’Agde</strong> s’étend à l’est de cette station balnéaire
-              incontournable. <strong>Première destination naturiste
-                en Méditerranée et plus grand village d’Europe</strong>,
-                il représente aujourd’hui une <strong>opportunité
-                  d’investissement dans un endroit unique</strong>, où plaisirs,
-                  liberté et festivités s’expriment dans la tolérance
-                  et le respect d’autrui.</p>
-
-            <p class="p-font2 py-4 my-4 w-80 mx-auto"> Avec tous les <strong>équipements, commerces, restaurants
-              et services nécessaires au confort de la vie
-              quotidienne, le village est entièrement autonome</strong>.
-              Il dispose également d’atouts majeurs : un littoral de
-              sable fin de 2 kilomètres de long abritant 3 plages
-              aménagées, sans oublier un port de plaisance de
-              300 anneaux.</p>
 
       </div>
 
     </div>
 
 
-      <!-- Gallery-2 img Start-->
-      <div class="gallery-area2 fix mb-4" >
-        <div class="row">
-          <div class="gallery-img col-sm-6 col-lg-4">
-            <%=image_tag("village-naturiste-cap-agde.webp", style:"width:100%; height:auto; object-fit:cover;")%>
-          </div>
-          <div class="gallery-img col-sm-6 col-lg-4">
-            <%=image_tag("port-cap-agde2.webp", style:"width:100%; height:auto; object-fit:cover;")%>
-          </div>
-          <div class="gallery-img col-sm-6 col-lg-4">
-            <%=image_tag("plage-cap-agde.webp", style:"width:100%; height:auto; object-fit:cover;")%>
-          </div>
-          </div>
-        </div>
-      </div>
-      <!-- Gallery-2 img End-->
+  </section>
 
 
 
 
-
-<div id="architecture" class="jumbotron-archi active " style="background-image:url(<%= asset_path 'vibes-resort-cap-agde1.jpg' %>) ;  ">
-
-  <div class="container archi text-center">
-    <h2 class="mb-4 pb-4" > L'Architecture</h2>
-
-    <p class="p-font3 w-80 mx-auto" > Signé par l’<strong>agence montpelliéraine <a href="http://www.aplus-architecture.com/agence/presentation/" target="_blank">A+ Architecture</a></strong>,
-      le concept architectural de la résidence trouve son
-      origine dans le mouvement de la vague. L’ondulation
-      des lignes évoque, dans une forme résolument
-      futuriste à l’esthétisme pur, le mouvement perpétuel
-      de la mer et le charme de l’<strong>éternel féminin</strong>. </p>
+  <section class="marge-pers" id="architecture">
 
 
-      <div class=" pt-4">
-       <a href="https://maquettes-toutela3d.fr/angelotti/vibes/bat-all.html" class="primary-btn visibleBorderLeftRight2 mt-4" target="_blank">Découvrir la maquette virtuelle</a>
-      </div>
+    <div class="container" style="background-color:#f2f2f2; padding:5em 0;">
+
+      <div class="row d-flex justify-content-between align-items-center" >
+
+        <div class="col-lg-5 ml-4 pl-4 ">
+
+            <h3 class="h3-trait  py-4 pl-4 ">L'Architecture </h3>
+
+            <h2 class="pl-4">Le mouvement de la vague</h2>
+
+            <p class="mt-4 pt-4 pl-4">Signé par l’agence montpelliéraine A+ Architecture, le concept architectural de cette résidence neuve de luxe trouve son origine dans le mouvement de la vague. </p>
+
+            <p class="pt-4 pl-4">L’ondulation des lignes évoque, dans une forme résolument futuriste à l’esthétisme pur, le mouvement perpétuel de la mer et le charme de l’éternel féminin.</p>
+
+            <a href="https://maquettes-toutela3d.fr/angelotti/vibes/bat-all.html" target="_blank" class="btn btn-primary mt-4 mb-4 ml-4"><i class="fas fa-chevron-right"></i>  Découvrir la maquette virtuelle</a>
 
 
-  </div>
-</div>
-
-
-
-
-
-<div class="row " style="padding:2em; display:flex; align-items:center; justify-content:center;" id="appartements">
-
-  <div class="col-xs-12 col-sm-12 col-lg-10 col-md-10 pt-4 mt-4 ">
-
-
-    <h2 style="font-size:42px; text-align:center;"> Les Appartements</h2>
-
-
-
-  </div>
-
-
-        <div class="col-xs-12 col-sm-12 col-lg-8 col-md-10">
-
-          <div class="container text-center  mx-auto archi2 "  data-aos="fade-up" data-aos-delay="100">
-          <!--  <h2 class="mb-4 pb-4"> Les Appartements </h2>-->
-
-            <p class="p-font2 text-center"> Rejoignez vos <strong>appartements privés et profitez
-              d’un confort de grand standing</strong>, que l’on a aussi
-              plaisir à faire partager. Des <strong>chambres T1 aux
-                suites 4 pièces</strong>, les <strong>appartements de Vibes Resort</strong>
-                ont ce petit quelque chose en plus qui les rend
-                tellement irrésistibles. </p>
-
-                <p class="p-font2 text-center">Décoration et mobilier
-                  design, ambiance feutrée, spacieux volumes,
-                  stationnements privatifs sécurisés ; ici, tout est
-                  dédié à votre <strong>bien-être</strong>. </p>
-
-          </div>
 
         </div>
 
-  </div>
+        <div class="col-lg-6 text-center">
+
+          <%=image_tag("vibes-resort1.jpg", class:"image-pers")%>
 
 
-
-
-    <!-- Gallery-2 img Start-->
-    <div class="gallery-area2 fix mb-4 pb-4" >
-      <div class="row" style="justify-content:center;">
-        <div class="gallery-img col-sm-6 col-lg-5 mt-2 mb-4">
-          <a href="#"><%=image_tag("vibes-resort-appartement-2.webp", style:"width:100%; height:20em; object-fit:cover; background-position:right")%></a>
         </div>
-        <div class="gallery-img col-sm-6 col-lg-5 mt-2">
-          <a href="#"><%=image_tag("chambre-HD2.webp", style:"width:100%; height:20em; object-fit:cover;")%></a>
-        </div>
-      </div>
-    </div>
-    <!-- Gallery-2 img End-->
-
-
-
-
-<div class="row " style="padding:2em; display:flex; align-items:center; justify-content:center;" id="appartements">
-
-  <div class="col-xs-12 col-sm-12 col-lg-10 col-md-10 pt-4 ml-4 pl-4">
-
-    <h2 style="font-size:42px; text-align:center;"> Le Rooftop</h2>
-
-  </div>
-
-  <div class="col-xs-12 col-sm-12 col-lg-8 col-md-10">
-
-    <div class="container text-center mx-auto archi2 "  data-aos="fade-up" data-aos-delay="100">
-    <!--  <h2 class="mb-4 pb-4"> Les Appartements </h2>-->
-
-      <p class="p-font2 text-center">À l’intérieur de la résidence, c’est le domaine privé
-        du luxe et de l’hédonisme. Avec vue panoramique sur
-        le <strong>village naturiste, Port Ambonne et la Méditerranée</strong>,
-        le rooftop de <strong>Vibes Resort est une île privée</strong>, où
-        le temps qui passe se déguste avec raffinement.
-      </p>
-
-      <p class="p-font2 text-center"> Appréciez un cocktail dans la piscine, profitez des spas à débordement ou du bar lounge, prélassez-vous sur la large plage en bois, à l’ombre des palmiers… <strong>et
-        c’est toute la douceur du Sud qui s’offre à vous</strong>.</p>
 
       </div>
 
-  </div>
-
-
-</div>
-
-
-<!-- Gallery-2 img Start-->
-<div class="gallery-area2 fix mb-4 pb-4" >
-  <div class="row" style="justify-content:center;">
-    <div class="gallery-img col-sm-6 col-lg-5 mb-4">
-      <a href="#"><%=image_tag("vibes-resort-terrasse-2.webp", style:"width:100%; height:20em; object-fit:cover;")%></a>
-    </div>
-    <div class="gallery-img col-sm-6 col-lg-5 mb-4">
-      <a href="#"><%=image_tag("vibes-resort-terrasse-1.webp", style:"width:100%; height:20em; object-fit:cover;")%></a>
-    </div>
-  </div>
-</div>
-<!-- Gallery-2 img End-->
-
-
-
-<!--? Services Start -->
-<section class="pricing-card-area section-padding30 " style="background-image: url(<%=asset_path "section_bg11.png"%>);">
-<div class="container">
-  <!-- Section Tittle -->
-  <div class="row d-flex justify-content-center">
-    <div class="col-lg-10">
-      <div class="section-tittle text-center mb-70">
-        <h2 class="my-4 py-4">Devenir Propriétaire</h2>
-        <h4 class="my-4 py-4">Cette résidence de tourisme de luxe est idéale pour valoriser votre patrimoine,
-          avec une rentabilité prévisionnelle entre 5 et 6 % et la récupération possible de la TVA*.</h4>
-        </div>
-      </div>
     </div>
 
-    <div class="row align-items-end">
 
-      <div class="col-xl-4 col-lg-4 col-md-6">
-        <div class="single-card active text-center mb-30">
-          <div class="card-top">
-            <span class="flaticon-chart"></span>
-            <h4>Chambre T1</h4>
+  </section>
+
+
+
+    <section class="marge-pers" id="appartement">
+
+
+      <div class="container" style="background-color:#f2f2f2; padding:5em 0;">
+
+        <div class="row d-flex justify-content-between align-items-center" >
+
+
+          <div class="col-lg-6 text-center ">
+
+            <%=image_tag("vibes-resort4.jpg", style:" margin-left:-12em;width:auto;height:40em;object-fit:cover; overflow:hidden;")%>
+
+
           </div>
-          <div class="card-bottom">
-            <ul>
-              <li><i class="fas fa-check"></i>Chambres de 28 à 51 m<sup>2</sup></li>
-              <li><i class="fas fa-check"></i>A partir de 285 600 € TTC**</li>
-            </ul>
+
+
+          <div class="col-lg-6 px-4 ">
+
+            <h3 class="h3-trait px-4">Les Appartements </h3>
+
+            <h2 class="px-4">Un confort de grand standing</h2>
+
+            <p class="mt-4 pt-4 px-4">Rejoignez vos appartements privés et profitez d’un confort de grand standing, que l’on a aussi plaisir à faire partager. Des chambres T1 aux suites 4 pièces, les appartements de Vibes Resort ont ce petit quelque chose en plus qui les rend tellement irrésistibles.</p>
+
+            <p class="pt-4 px-4">Décoration et mobilier design, ambiance feutrée, spacieux volumes, stationnements privatifs sécurisés ; ici, tout est dédié à votre bien-être.</p>
+
+            <%= link_to "Télécharger la plaquette", new_plaquette_path, class: "btn btn-primary-outline  ml-4 mt-4 " %>
+
+
           </div>
-          <div class="card-buttons mt-30">
-            <a href="<%=root_path(anchor:"contact")%>" class="primary-btn visibleBorderLeftRight2 mt-4">Contactez-nous</a>
-          </div>
+
+
+
         </div>
+
       </div>
 
-      <div class="col-xl-4 col-lg-4 col-md-6">
-        <div class="single-card  text-center mb-30">
-          <div class="card-top">
-            <span class="flaticon-project"></span>
-            <h4>Logements T3</h4>
+
+    </section>
+
+
+
+
+
+      <section class="marge-pers" id="rooftop">
+
+
+        <div class="container" style="background-color:#f2f2f2; padding:5em 0; margin-bottom:6em;">
+
+          <div class="row d-flex justify-content-between align-items-center" >
+
+            <div class="col-lg-5 pl-4 ml-4  ">
+
+              <h3 class="h3-trait px-4">Le Rooftop </h3>
+
+              <h2 class="px-4">La douceur du Sud s'offre à vous</h2>
+
+              <p class="mt-4 pt-4 px-4">À l’intérieur de la résidence, c’est le domaine privé du luxe et de l’hédonisme. Avec vue panoramique sur le village naturiste, Port Ambonne et la Méditerranée, le rooftop de Vibes Resort est une île privée, où le temps qui passe se déguste avec raffinement.</p>
+
+              <p class="pt-4 px-4">Appréciez un cocktail dans la piscine, profitez des spas à débordement ou du bar lounge, prélassez-vous sur la large plage en bois, à l’ombre des palmiers… et c’est toute la douceur du Sud qui s’offre à vous.</p>
+
+              <%= link_to "Télécharger la plaquette", new_plaquette_path, class:"btn btn-primary-outline ml-4 mt-4 mb-4" %>
+
+
+
+            </div>
+
+            <div class="col-lg-6 text-center ">
+
+              <%=image_tag("vibes-resort3.jpg", style:"", class:"image-pers")%>
+
+
+            </div>
+
           </div>
-          <div class="card-bottom">
-            <ul>
-              <li><i class="fas fa-check"></i>Logements de 66 m<sup>2</sup></li>
-              <li><i class="fas fa-check"></i>A partir de 644 000 € TTC**</li>
-            </ul>
-          </div>
-          <div class="card-buttons mt-30">
-            <a href="<%=root_path(anchor:"contact")%>" class="primary-btn visibleBorderLeftRight2 mt-4">Contactez-nous</a>
-          </div>
+
         </div>
+
+
+      </section>
+
+
+
+
+      <section class="container row mx-auto" style="background-image:url(<%= asset_path 'wave.png' %>); background-position: center left; background-size:cover;">
+
+            <div class="container row my-4 py-4 mx-auto" style="display:flex;align-items:center; ">
+              <div class="col-md-6">
+                <p class="big-text">Découvrez la maquette virtuelle du Vibes Resort dès maintenant </P>
+              </div>
+
+              <div class="col-md-6 text-center">
+                <a href="https://maquettes-toutela3d.fr/angelotti/vibes/bat-all.html" target="_blank" class="btn btn-primary2 mr-2">Maquette virtuelle</a>
+              </div>
+            </div>
+
+      </section>
+
+
+
+
+    <section class="marge-pers" id="proprietaire">
+
+
+
+      <div class="mt-4 px-4 justify-content-center align-items-center jumbotron2">
+
+        <h2 class=" text-center mb-4">Investissez au sein du plus grand village naturiste d'Europe.</h2>
+        <p class="text-center mb-4" style="font-size:22px;">Cette résidence de tourisme de luxe est idéale pour valoriser votre patrimoine, <br>avec une <span class="bold" >rentabilité prévisionnelle entre 5 et 7 %</span> et la récupération possible de la TVA*. </p>
+
       </div>
 
-      <div class="col-xl-4 col-lg-4 col-md-6">
-        <div class="single-card text-center mb-30">
-          <div class="card-top">
-            <span class="flaticon-award"></span>
-            <h4>Suite Duplex</h4>
+
+
+        <div class="row d-flex justify-content-center" style="padding-bottom:10em; margin-top:-15em;">
+
+
+          <div class="col-md-3 my-4" >
+
+              <div class="">
+                <%=image_tag("esquisse1.jpg", class:"img-esquisse")%>
+              </div>
+
+              <div class="enfant2">
+                <h4 class="ml-4 mb-2">Chambre T1</h4>
+                <p class="ml-4 mt-2" style="line-height:1.5;">Chambres de 28 à 51 m<sup>2</sup><br>
+                A partir de 285 600 € TTC**</p>
+              </div>
+
           </div>
-          <div class="card-bottom">
-            <ul>
-              <li><i class="fas fa-check"></i>Suites duplex de 48 à 139 m<sup>2</sup></li>
-              <li><i class="fas fa-check"></i>A partir de 708 000 € TTC**</li>
-            </ul>
+
+          <div class="col-md-3 my-4" >
+
+            <div class="">
+              <%=image_tag("esquisse2.jpg", class:"img-esquisse")%>
+            </div>
+
+            <div class="enfant2">
+              <h4 class="ml-4 mb-2">Appartements T3</h4>
+              <p class="ml-4 my-2" style="line-height:1.5;">Logements de 66 m<sup>2</sup>
+                <br>A partir de 644 000 € TTC**</p>
+            </div>
+
           </div>
-          <div class="card-buttons mt-30">
-            <a href="<%=root_path(anchor:"contact")%>" class="primary-btn visibleBorderLeftRight2 mt-4">Contactez-nous</a>
+
+          <div class="col-md-3 my-4" >
+
+            <div class="">
+              <%=image_tag("esquisse3.jpg", class:"img-esquisse")%>
+            </div>
+
+            <div class="enfant2">
+              <h4 class="ml-4 mb-2">Suite duplex</h4>
+              <p class="ml-4 mt-2" style="line-height:1.5;">Suites duplex de 48 à 139 m<sup>2</sup>
+              <br>A partir de 708 000 € TTC**</p>
+            </div>
+
           </div>
+
+          <div class="container text-left mt-4 pt-4 px-4" style="font-size:10px;" >
+
+            <span> *Rentabilité donnée à titre indicatif et sous conditions. La location sous le régime de la parahôtellerie nécessite la mise en œuvre d’au moins trois des prestations suivantes : fourniture du petit-déjeuner, nettoyage régulier des locaux, fourniture du linge de maison, réception de la clientèle. Elle permet la récupération intégrale de la TVA (20%) payée lors de l’acquisition du bien, sous condition d’engagement de location. Comme tout investissement, investir dans l’immobilier peut présenter des risques.
+            <br><br>
+            **Prix TTC, incluant une TVA récupérable de 20%. Dans la limite des stocks disponibles.</span>
+
+          </div>
+
+
         </div>
+
+
+    </section>
+
+
+
+<section >
+
+
+  <div class="container" style="margin-top:-6em;">
+
+    <div class="row d-flex justify-content-between align-items-center" >
+
+      <div class="col-md-5 pl-4">
+
+        <h3 class="h3-trait">Devenir Propritétaire </h3>
+
+        <h2>L'investissement para-hôtelier : de nombreux avantages</h2>
+
+        <p class="pt-4 dark mt-4">Décoration et mobilier design, ambiance feutrée, spacieux volumes, stationnements privatifs sécurisés ; ici, tout est dédié au bien-être.
+        <br><br><br>
+
+        <span class="bold" >Vous disposez d’un logement clé en main, prêt à accueillir les vacanciers.</span>
+
+        <br><br><br>Nous vous offrons la possibilité d’acquérir une chambre ou une suite meublée au sein d’une résidence à vocation touristique permettant à votre gestionnaire d’organiser la fourniture d’au moins 3 des 4 prestations para-hôtelières suivantes :</p>
+
+
+
       </div>
 
-      <!-- Section Tittle -->
-      <div class="row d-flex justify-content-center mb-4 pb-4">
-        <div class="col-lg-10">
-          <div class=" text-center my-4 py-4">
-            <h4 class="my-4 py-4">Nous vous offrons la possibilité d’acquérir une chambre ou une suite, meublée au sein d’une résidence à vocation touristique permettant à votre gestionnaire d’organiser la fourniture d’au moins 3 des 4 prestations para-hôtelières suivantes :</h4>
-          </div>
-        </div>
+      <div class="col-md-6 text-center mt-4">
+
+      <a href="<%=new_plaquette_path%>">
+        <%=image_tag("plaquette-vibes-resort2.png", style:"width:110%;height:auto; margin-top:4em;")%>
+      </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container" style="padding-bottom:8em;">
+
+
+
+    <div class="row text-center mt-4 pt-4" style="justify-content:center;align-content:center; ">
+
+
+      <div class=" col-3">
+
+        <%=image_tag("clients.png", style:"width:30%;height:auto;")%>
+        <p class="pt-4">Accueil des clients</p>
+
+      </div>
+
+
+      <div class=" col-3">
+
+        <%=image_tag("dejeuner.png", style:"width:30%;height:auto;")%>
+        <p class="pt-4">Petit déjeuner</p>
+
+      </div>
+
+
+      <div class=" col-3">
+
+        <%=image_tag("linge.png", style:"width:30%;height:auto;")%>
+        <p class="pt-4">Fourniture du linge</p>
+
+      </div>
+
+
+      <div class="col-3">
+
+        <%=image_tag("menage.png", style:"width:30%;height:auto;")%>
+        <p class="pt-4">Nettoyage quotidien des locaux</p>
+
+      </div>
+
+
+      <div class="col-md-6">
+
+        <p class="py-4 mt-4 px-4 text-left border-bloc">Si ces conditions sont réunies, l’ensemble de la prestation (assimilée à une activité hôtelière) est soumis à la TVA.<br><br> L’acquéreur peut alors récupérer la TVA qu’il a acquittée sur le prix de l’acquisition des murs et du mobilier (taux de TVA en vigueur).</p>
+
+      </div>
+
+      <div class="col-md-6 ">
+
+        <p class="py-4 mt-4 px-4 text-left border-bloc">Cette récupération est totalement acquise au bout de 20 ans de détention (au bout de 5 ans pour le mobilier). <br>En cas de revente anticipée, la TVA est remboursable au prorata de la différence d’années de détention, sauf si le nouvel acquéreur reprend le mandat de gestion jusqu’au terme des 20 ans. </p>
+
       </div>
 
 
     </div>
+
   </div>
+
 </section>
-<!-- Services Card End -->
-
-
-<!--? Count Down Start -->
-<div class="count-down-area">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-12 col-md-12">
-        <div class="count-down-wrapper" style="background-color:#10384E; border-radius : 0 24px 0 24px ;">
-          <div class="row justify-content-between">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <!-- Counter Up -->
-              <div class="single-counter text-center">
-                <span class="counter pt-4"><%= image_tag('croissantb.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
-                <p>Petit déjeuner</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <!-- Counter Up -->
-              <div class="single-counter active text-center">
-                <span class="counter pt-4">                <%= image_tag('menageb.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
-                <p>Nettoyage quotidien des locaux</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <!-- Counter Up -->
-              <div class="single-counter text-center">
-                <span class="counter pt-4">             <%= image_tag('laundryb.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
-                <p>Fourniture du linge</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <!-- Counter Up -->
-              <div class="single-counter text-center">
-                <span class="counter pt-4">                <%= image_tag('clientb.png', :class => "mx-auto pb-4", :alt => "prestations para hotelieres")%></span>
-                <p>Réception de la clientèle</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Count Down End -->
-
-
-<!-- Section Tittle -->
-<div class="row d-flex justify-content-center">
-  <div class="col-lg-8">
-    <div class=" ">
-      <h4 class="mb-4 pb-4 text-center">Si ces conditions sont réunies, l’ensemble de la prestation (assimilée à une activité hôtelière) est soumis à la TVA. L’acquéreur peut alors récupérer la TVA qu’il a acquittée sur le prix de l’acquisition des murs et du mobilier (taux de TVA en vigueur).</h4>
-      <p style="margin-bottom:2em;">
-        Cette récupération est totalement acquise au bout de 20 ans de détention (au bout de 5 ans pour le mobilier). En cas de revente anticipée, la TVA est remboursable au prorata de la différence d’années de détention, sauf si le nouvel acquéreur reprend le mandat de gestion jusqu’au terme des 20 ans.</p>
-      </div>
-
-      <div style="padding-bottom:2em; text-align:center;">
-        <%= link_to "Nous contacter", root_path(anchor: 'contact'), class: "primary-btn2 visibleBorderLeftRight2 " %>
-      </div>
-
-      <p class="p-font4 mb-4 pb-4">
-        *Rentabilité donnée à titre indicatif et sous conditions. La location sous le régime de la parahôtellerie nécessite la mise en œuvre d’au moins trois des prestations suivantes : fourniture du petit-déjeuner, nettoyage régulier des locaux, fourniture du linge de maison, réception de la clientèle. Elle permet la récupération intégrale de la TVA (20%) payée lors de l’acquisition du bien, sous condition d’engagement de location. Comme tout investissement, investir dans l’immobilier peut présenter des risques.
-        <br><br>
-        **Prix TTC, incluant une TVA récupérable de 20%. Dans la limite des stocks disponibles.
-      </P>
-
-
-    </div>
-  </div>
 
 
 
-  <!-- ======= Contact Us Section =======
-  <section class="contact" id="contact">
-    <div class="container ">
-
-      <h2 class="pb-4 mb-4 text-center" >Vous êtes séduit par notre résidence ? Contactez-nous.</h2>
-
-      <div class="row">
-
-        <div class="col-lg-6 pt-4" data-aos="fade-up" >
-
-          <h3><i class="fas fa-phone pr-4 pb-4"></i> Appelez-nous</h3>
-          <p style="font-size:28px;">04 67 57 11 26</p>
-
-          <p class="p-font3 pr-4 mr-4 pt-4 mt-4">Vous êtes intéressé par <strong>Vibes Resort</strong> ? Vous souhaitez obtenir davantage d'informations sur notre résidence ? <strong>Remplissez le formulaire suivant, nous vous recontacterons</strong> !</p>
-
-
-        </div>
-
-
-        <div class="col-lg-6">
-
-          <% flash.each do |type, msg| %>
-          <div class="alert alert-info margin-top:100px;" style="z-index:1">
-            <%= msg %>
-          </div>
-          <% end %>
-
-          <%= form_tag url_for(contact_index_path), :contact => @contact, id: 'contact-form', method: 'post' do %>
-          <div class="row php-email-form" >
-            <div class="col-md-6">
-              <div class="form-group">
-                <%= text_field_tag 'name', nil, placeholder: 'Nom*', class:"form-control" %>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <%= text_field_tag 'firstname', nil, placeholder: 'Prénom*', class:"form-control" %>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="form-group">
-                <%= text_field_tag 'phone', nil, placeholder: "Téléphone-portable", class:"form-control" %>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="form-group">
-                <%= text_field_tag 'email', nil, placeholder: "E-mail*", class:"form-control" %>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="form-group">
-                <%= text_area_tag 'message', nil, placeholder: "Message", rows:"4", class:"form-control" %>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <p class="p-font4">Je suis intéressé(e) par:</p>
-            </div>
-            <div class="col-md-3">
-              <div class="form-group">
-                <p class="p-font4"><%= check_box_tag 'room' %> Chambre</p>
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="form-group">
-                <p class="p-font4"><%= check_box_tag 'suite' %> Suite</p>
-              </div>
-            </div>
-            <div class="submit-button text-left">
-              <%= submit_tag "    Envoyer    ", class: "btn-get-started pr-3 pl-4", style:"border-radius:20px;" %>
-              <%end%>
-            </div>
-            <div class="col-md-12">
-              <p class="p-font4">*Champs obligatoires</p>
-              <p class="p-font4 "><i> En soumettant ce formulaire, vous acceptez que vos données personnelles soient utilisées pour vous contacter dans le cadre de votre demande indiquée dans ce formulaire. Aucun autre traitement ne sera effectué avec vos informations.</i></p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Contact Us Section -->
+<section id="contact">
 
 
 
-  <div class="content" style="background-image:url('<%=asset_path "vibes-resort-cap-agde3.jpg"%>'); background-size:cover;" id="contact">
-
-     <div class="container container2">
+     <div class=" container2" >
        <div class="row align-items-stretch no-gutters contact-wrap">
 
 
-         <div class="col-md-4">
-           <div class="contact-info h-100">
-             <p class="mb-5 mt-4 pt-4">Vous êtes intéressé par <strong>Vibes Resort</strong> ? Vous souhaitez obtenir davantage d'informations sur notre résidence ? <br><br><strong>Remplissez le formulaire suivant, nous vous recontacterons</strong> !</p>
+         <div class="col-md-5 padding-none"  >
 
-             <h2 class="mb-4">Appelez-nous</h2>
-
-             <h3 class="pt-4"><i class="fas fa-phone pr-4 pb-4"></i> 04 67 57 11 26</h3>
+           <div style="width:100%; background-color:#d0b178; text-align:left;">
+             <div class="row">
+               <p class="col-6 pl-4 ml-2 p-form pt-4"> Contactez-nous</p>
+               <p class="col-5  p-form pt-4"><i class="fas fa-phone"></i> 04 67 57 11 26</p>
+             </div>
+             <p class="white pl-3 pb-4"> Remplissez le formulaire suivant, nous vous recontacterons.</p>
            </div>
-         </div>
 
-
-
-         <div class="col-md-8">
-           <div class="form h-100 pt-4">
-
+           <div class="form  pt-4 mt-4">
 
 
                <%= form_tag url_for(contact_index_path), :contact => @contact, id: 'contact-form', method: 'post' do %>
 
 
                <div class="row mt-4 pt-4">
-                 <div class="col-md-6 form-group mb-5">
+                 <div class="col-6 form-group mb-5">
                    <label for="" class="col-form-label">Nom *</label>
                    <%= text_field_tag 'name', nil, class:"form-control" %>
                  </div>
-                 <div class="col-md-6 form-group mb-5">
+                 <div class="col-6 form-group mb-5">
                    <label for="" class="col-form-label">Prénom *</label>
                    <%= text_field_tag 'firstname', nil, class:"form-control" %>
                  </div>
                </div>
 
                <div class="row">
-                 <div class="col-md-6 form-group mb-5">
+                 <div class="col-6 form-group mb-5">
                    <label for="" class="col-form-label">E-mail *</label>
                    <%= text_field_tag 'email', nil, class:"form-control" %>
                  </div>
-                 <div class="col-md-6 form-group mb-5">
+                 <div class="col-6 form-group mb-5">
                    <label for="" class="col-form-label">Numéro de Téléphone</label>
                    <%= text_field_tag 'phone', nil, class:"form-control" %>
                  </div>
                </div>
 
-               <div class="row mb-4">
-               <div class="col-md-4">
-                 <div class="form-group">
-                   <p class="p-font4"><%= check_box_tag 'room' %> Chambre</p>
+               <div class="row mb-2">
+                 <div class="col-md-4">
+                   <div class="form-group">
+                     <p class="p-font4"><%= check_box_tag 'room' %> Chambre</p>
+                   </div>
                  </div>
-               </div>
-               <div class="col-md-8">
-                 <div class="form-group">
-                   <p class="p-font4"><%= check_box_tag 'suite' %> Suite</p>
+                 <div class="col-md-8">
+                   <div class="form-group">
+                     <p class="p-font4"><%= check_box_tag 'suite' %> Suite</p>
+                   </div>
                  </div>
-               </div>
                </div>
 
 
                <div class="row">
                  <div class="col-md-12 form-group mb-5">
-                   <label for="message" class="col-form-label">Message *</label>
-                   <%= text_area_tag 'message', nil, placeholder: "Ecrivez votre message", rows:"3", class:"form-control" %>
+
+                   <%= text_area_tag 'message', nil, placeholder: "Votre message*", rows:"2", class:"form-control" %>
                  </div>
                </div>
 
@@ -602,74 +464,49 @@
        </div>
      </div>
 
-   </div>
+
+     <iframe class="red-box d-none d-md-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.83894318208!2d3.5229999999999992!3d43.2966944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE3JzQ4LjEiTiAzwrAzMScyMi44IkU!5e0!3m2!1sfr!2sfr!4v1594023094804!5m2!1sfr!2sfr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+</section>
+
+
+      <script>
+        $(document).ready(function() {
+
+          if ($("#datetimepicker").length != 0) {
+            $('#datetimepicker').datetimepicker({
+              icons: {
+                time: "fa fa-clock-o",
+                date: "fa fa-calendar",
+                up: "fa fa-chevron-up",
+                down: "fa fa-chevron-down",
+                previous: 'fa fa-chevron-left',
+                next: 'fa fa-chevron-right',
+                today: 'fa fa-screenshot',
+                clear: 'fa fa-trash',
+                close: 'fa fa-remove'
+              }
+            });
+          }
+
+          function scrollToDownload() {
+
+            if ($('.section-download').length != 0) {
+              $("html, body").animate({
+                scrollTop: $('.section-download').offset().top
+              }, 1000);
+            }
+          }
+        });
 
 
 
-<!--
-  <div id="booking" class="section" style="background-image:url('<%=asset_path "section_bg1.png"%>')">
-		<div class="section-center my-4">
-			<div class="container">
-
-        <h2 class="pb-4 mb-4 text-center" >Vous êtes séduit par notre résidence ? Contactez-nous.</h2>
-
-				<div class="row">
-					<div class="booking-form mt-4 pt-4">
-						<div class="booking-bg">
-							<div class="form-header">
-								<h3 style="color:white;"><i class="fas fa-phone pr-4 pb-4"></i> 04 67 57 11 26</h3>
-								<p class="mt-4 pt-2">Vous êtes intéressé par <strong>Vibes Resort</strong> ? Vous souhaitez obtenir davantage d'informations sur notre résidence ? <strong><br><br>Remplissez le formulaire suivant, nous vous recontacterons</strong> !</p>
-							</div>
-						</div>
-						<form>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<span class="form-label">Nom</span>
-										<input class="form-control" type="text" required>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<span class="form-label">Prénom</span>
-										<input class="form-control" type="text" required>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<span class="form-label">E-mail</span>
-										<select class="form-control">
-
-										</select>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<span class="form-label">Numéro de téléphone</span>
-										<select class="form-control">
-
-										</select>
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<span class="form-label">Message</span>
-								<select class="form-control" required>
-
-								</select>
-							</div>
-							<div class="form-btn">
-								<button class="submit-btn">Envoyer</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>-->
 
 
+      </script>
 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.83894318208!2d3.5229999999999992!3d43.2966944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDE3JzQ4LjEiTiAzwrAzMScyMi44IkU!5e0!3m2!1sfr!2sfr!4v1594023094804!5m2!1sfr!2sfr" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <script>
+
+
+      </script>

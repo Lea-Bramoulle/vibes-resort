@@ -14,14 +14,6 @@
 //= require activestorage
 //= require turbolinks
 //= require jquery.min
-//= require bootstrap.bundle.min
-//= require jquery.easing.min
-//= require jquery.sticky
-//= require venobox.min
-//= require jquery.waypoints.min
-//= require counterup.min
-//= require owl.carousel.min
-//= require isotope.pkgd.min
-//= require aos
-//= require main 
+//= require bootstrap.min
+//= require paper-kit
 //= require_tree .

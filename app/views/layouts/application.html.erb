@@ -12,6 +12,32 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+
+  <meta name="description" content="Découvrez Vibes Resort, nouvelle résidence de standing à vocation touristique située dans le village naturiste du Cap d'Agde. De la chambre T1 à la suite 4 pièces. Contactez-nous !" />
+
+  <script src="https://kit.fontawesome.com/2f609438b2.js" crossorigin="anonymous"></script>
+
+  <!--     Fonts and icons     -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
   <!-- GA -->
@@ -50,16 +76,6 @@
   <%end%>
 
 
-  <meta name="description" content="Découvrez Vibes Resort, nouvelle résidence de standing à vocation touristique située dans le village naturiste du Cap d'Agde. De la chambre T1 à la suite 4 pièces. Contactez-nous !" />
-
-  <script src="https://kit.fontawesome.com/2f609438b2.js" crossorigin="anonymous" defer></script>
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&display=swap" rel="stylesheet">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -67,77 +83,127 @@
 <body>
 
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="bs-example">
-        <nav class="navbar navbar-expand-md navbar-light bg-white">
-          <%= image_tag 'vibes-resort-logo.png', style:"width:15%; padding-top:3em;"%>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <div class="collapse navbar-collapse bg-white"  id="navbarCollapse">
-                <div class="navbar-nav ml-auto pt-4">
-                  <ul >
-                    <li style=" display: inline-block;
-                    vertical-align: middle" >
-                    <%= link_to "Le village", root_path(anchor:"village") , class:"px-2 nav-item nav-link "%></li>
-                    <li style=" display: inline-block;
-                    vertical-align: middle" ><%= link_to "L'architecture", root_path(anchor:"architecture"), class:"px-2 nav-item nav-link " %></li>
-                    <li style=" display: inline-block;
-                    vertical-align: middle" ><%= link_to "Le rooftop", root_path(anchor:"rooftop") , class:"p-2 nav-item nav-link "%></li>
-                    <li style=" display: inline-block;
-                    vertical-align: middle" ><%= link_to "Les appartements", root_path(anchor:"appartements") , class:"px-2 nav-item nav-link "%></li>
-                    <li style=" display: inline-block;
-                    vertical-align: middle" ><%= link_to "Devenir propriétaire", root_path(anchor:"proprietaire"), class:"px-2 nav-item nav-link " %></li>
-                    <li style=" display: inline-block;
-                    vertical-align: middle" ><%= link_to "Nous contacter", root_path(anchor:"contact"), class:"px-2 btn-get-started " %></li>
-                    <li style=" display: inline-block;
-                    vertical-align: middle" ><%= link_to "Télécharger la plaquette", new_plaquette_path, class:"px-2 btn-invers " %></li>
-                  </ul>
-                </div>
-
-            </div>
-        </nav>
-
-        <div class="bandeau pb-2 pt-1 d-none d-sm-block">
-        <p class="p-bandeau color-primary "><strong> Devenez propriétaire</strong> d’un logement dans une résidence de tourisme de luxe<br> et <strong>investissez</strong> au sein du plus grand village naturiste d’Europe. </p>
-        </div>
-
-
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="300">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="<%=root_path%>" rel="tooltip" title="Vibes Resort - Résidence neuve Cap d'Agde" data-placement="bottom">
+          <img src="<%= asset_path 'vibes-resort-logo.png' %>"style="height:5em;width:auto;"/>
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="<%= root_path(anchor:'architecture')%>" class="nav-link"> L'architecture</a>
+          </li>
+          <li class="nav-item">
+            <a href="<%= root_path(anchor:'appartement')%>" class="nav-link"> Les appartements</a>
+            </li>
+            <li class="nav-item">
+              <a href="<%= root_path(anchor:'rooftop')%>" class="nav-link"> Le rooftop</a>
+            </li>
+            <li class="nav-item">
+              <a href="<%= root_path(anchor:'proprietaire')%>" class="nav-link"> Devenir propriétaire</a>
+            </li>
+          <li class="nav-item">
+            <a href="<%=root_path(anchor:'contact')%>" class="btn btn-primary">Contactez-nous</a>
+          </li>
+        </ul>
+      </div>
     </div>
-
-
-  </header><!-- End Header -->
+  </nav>
+  <!-- End Navbar -->
 
 
   <%= yield %>
 
-  <a href="#"><i class="fas fa-chevron-circle-up btn-up fa-2x"></i></a>
 
 
   <!-- ======= Footer ======= -->
 
-  <footer id="footer"  style="background-image:url('<%=asset_path "section_bg4.png"%>')">
+  <footer id="footer" class="" style="background-image:url('<%=asset_path "wave.png"%>'); background-position:bottom;">
 
-    <div class="container my-4 py-4">
-      <div class="copyright mt-4">
-        Tous droits réservés – <strong>SCCV VIBES RESORT</strong> – 790 452 452 RCS Béziers - Une opération commercialisée par le <a href="https://www.angelotti.fr/">Groupe Immobilier ANGELOTTI</a>
+
+    <div class="row mx-4 d-flex justify-content-around py-4">
+
+
+      <div class="col-md-2 mt-4 pt-4 ">
+
+        <img src="<%= asset_path 'vibes-resort-logo-or.png' %>"style="height:5em;width:auto;"/>
+
+        <p class="mt-4 mb-3" style="font-size:13px;">Une opération commercialisée par <a style="font-size:13px;" href="https://www.angelotti.fr/" class="a-nav2">Le Groupe Immobilier ANGELOTTI</a></p>
+
+        <p class="mt-4 mb-3" style="font-size:13px;">Suivez-nous sur :</p>
+        <a class="a-nav" href="https://fr-fr.facebook.com/groupe.angelotti" target="_blank"><i class="fab fa-facebook fa-2x mr-4"></i></a><a class="a-nav" href="https://fr.linkedin.com/company/angelotti-promotion" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
+
+
       </div>
-      <div class="credits">
+
+      <div class="col-md-3 pr-4">
+
+        <h4 class="my-4 py-4 primary">Liens</h4>
+
+        <a class="a-nav" href="<%= root_path(anchor:'architecture')%>"><p class="pt-3">L'architecture</p></a><hr style="opacity:20%;">
+        <a class="a-nav" href="<%= root_path(anchor:'appartement')%>"><p>Les appartements</p></a><hr style="opacity:20%;">
+        <a class="a-nav" href="<%= root_path(anchor:'rooftop')%>"><p>Le Rooftop</p></a><hr style="opacity:20%;">
+        <a class="a-nav" href="<%= root_path(anchor:'proprietaire')%>"><p>Devenir propriétaire</p></a>
+
+      </div>
+
+      <div class="col-md-3 px-4 d-none d-md-block">
+
+        <h4 class="my-4 py-4 primary">Galerie</h4>
+
+        <div class="row">
+
+          <%=image_tag("vibes-resort1.jpg", class:"col-4 d-none d-md-block img-nav")%>
+          <%=image_tag("vibes-resort-cap-agde2.jpg", class:"col-4 d-none d-md-block img-nav")%>
+          <%=image_tag("vibes-resort2.jpg", class:"col-4 d-none d-md-block img-nav")%>
+          <%=image_tag("vibes-resort3.jpg", class:"mt-4 col-4 d-none d-md-block img-nav")%>
+          <%=image_tag("vibes-resort4.jpg", class:"mt-4 col-4 d-none d-md-block img-nav")%>
+          <%=image_tag("cap-agde.png", class:"mt-4 col-4 d-none d-md-block img-nav")%>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-3 pl-4">
+
+        <h4 class="my-4 py-4 primary">Contactez-nous</h4>
+
+        <p class="pt-3 primary"><i class="fas fa-phone"></i> 04 67 57 11 26</p>
+        <p class="pt-4 pb-3">Une résidence de tourisme de luxe est idéale pour valoriser votre patrimoine, avec une rentabilité prévisionnelle entre 5 et 7 % et la récupération possible de la TVA*.</p>
+
+        <% if user_signed_in?%>
+          <span class="p-font4"><%= link_to "Back-Office", rails_admin_path, class:"pr-4 a-nav" %></span>
+          <span class="p-font4"><%= link_to "Se déconnecter", destroy_user_session_path, class:"pr-4 a-nav" , method: :delete%></span>
+        <%else%>
+          <p class="p-font4"><%= link_to "Se connecter", user_session_path , class:"pr-4 a-nav" %></p>
+        <%end%>
+
+      </div>
+
+    </div>
+
+
+
+    <hr style="opacity:20%;">
+
+
+    <div class="container row py-4 p-font4 mx-auto ">
+      <div class="copyright col-5">
+        Tous droits réservés – <strong>SCCV VIBES RESORT</strong> – 790 452 452 RCS Béziers
+      </div>
+      <div class="credits col-7">
         Illustrations à caractère d’ambiance © A+ Architecture, Golem Images, We Love Design, Atypik Studio – Photos © Shutterstock
       </div>
-      <div class="credits-2">
+      <div class="credits-2 ml-3 mt-2">
         Rentabilité donnée à titre indicatif et sous conditions. La location sous le régime de la parahôtellerie nécessite la mise en œuvre d’au moins trois des prestations suivantes : fourniture du petit-déjeuner, nettoyage régulier des locaux, fourniture du linge de maison, réception de la clientèle. Elle permet la récupération intégrale de la TVA (20%) payée lors de l’acquisition du bien, sous condition d’engagement de location. Comme tout investissement, investir dans l’immobilier peut présenter des risques – Tarifs indiqués TTC, incluant une TVA récupérable de 20%, dans la limite des stocks disponibles.
-      </div>
-      <div class="credits">
-        <% if user_signed_in?%>
-        <%= link_to "Back-Office",         contact_index_path, class:"pr-4" %>
-        <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete%>
-        <%else%>
-        <%= link_to "Se connecter", user_session_path %>
-        <%end%>
       </div>
     </div>
   </footer><!-- End Footer -->
