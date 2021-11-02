@@ -4757,6 +4757,7 @@ License - nucleoapp.com/license/
   padding: 0;
   background: #FFFFFF;
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  max-width: 100vw !important;
 }
 
 .navbar .navbar-brand {
@@ -4783,7 +4784,7 @@ License - nucleoapp.com/license/
 .navbar .navbar-nav .nav-item .nav-link {
   line-height: 1.6;
   margin: 15px 3px;
-  padding: 10px 15px;
+  padding: 10px;
   opacity: .8;
   font-size: 12px;
   text-transform: uppercase;
