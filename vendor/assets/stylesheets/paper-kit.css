@@ -91,7 +91,7 @@
 }
 
 body {
-  width:100vw;
+  max-width:100vw !important;
 }
 
 .white {
@@ -133,7 +133,8 @@ a {
 .img-esquisse {
   width:100%;
   height:28em;
-  object-fit:cover;box-shadow: 0 8px 8px #FFFFFF inset, 0 8px 8px rgba(0, 0, 0, 0.25);
+  object-fit:cover;
+  box-shadow: 0 8px 8px #FFFFFF inset, 0 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 /* Nouvelles règles si la fenêtre fait au plus 1024px de large */
@@ -150,7 +151,7 @@ a {
 
 
 .image-pers {
-  width:auto;
+  width:128%;
   height:40em;
   object-fit:cover;
   overflow:hidden;
@@ -166,6 +167,27 @@ a {
   }
 }
 
+
+.image-pers2 {
+    margin-left:-12em;
+    width:auto;
+    height:40em;
+    object-fit:cover;
+    overflow:hidden;
+}
+
+@media screen and (max-width: 800px)
+{
+  .image-pers2 {
+    margin-left:0em;
+    width:100%;
+    height:40em;
+    object-fit:cover;
+    overflow:hidden;
+  }
+}
+
+
 .marge-pers {
   margin-top:6em;
 }
@@ -174,9 +196,40 @@ a {
 {
   .marge-pers {
     margin-top:0em;
+    margin-bottom:0em;
   }
 
 }
+
+
+.marge-pers2 {
+  margin-bottom:6em;
+}
+
+@media screen and (max-width: 800px)
+{
+  .marge-pers2 {
+    margin-top:0em;
+    margin-bottom:0em;
+  }
+
+}
+
+
+.maquette-content {
+    background-position: center left;
+    background-size:cover;
+}
+
+@media screen and (max-width: 800px)
+{
+  .maquette-content {
+    margin-top:0em;
+    margin-bottom:0em;
+  }
+
+}
+
 
 .jumbotron2 {
   padding:8em 0 15em 0;
@@ -6868,6 +6921,7 @@ License - nucleoapp.com/license/
   display: block;
   height: 100%;
   left: 0;
+  right:0;
   top: 0;
   position: absolute;
   width: 100%;
@@ -8435,6 +8489,12 @@ License - nucleoapp.com/license/
 
   .container2 {
   padding-left:6em;
+  }
+
+  @media screen and (max-width: 800px) {
+    .container2 {
+      padding-left: 0em;
+    }
   }
 
 
