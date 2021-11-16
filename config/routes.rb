@@ -11,4 +11,9 @@ Rails.application.routes.draw do
 
   get '/merci', to: 'static#merci'
 
+  get '/indexV2', to: 'static#indexV2'
+
+  get '/indexv3', to: 'static#indexv3'
+
+
 end
